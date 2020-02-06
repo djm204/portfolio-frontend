@@ -8,11 +8,9 @@ type Props = {
 
 export const InfoSection: FunctionComponent<Props> = (props: Props) => {
     return (
-        <React.Fragment>
-            <div className={cnames('info-section', props.classnames)}>
-                {props.children}
-            </div>
-        </React.Fragment>
+        <div className={cnames('info-section', props.classnames)}>
+            {props.children}
+        </div>
     );
 }
 
