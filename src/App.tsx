@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import Home from './pages/Home';
-import TechSummary from './pages/TechSummary';
-import CatStats from './pages/CatStats';
-import Contact from './pages/Contact';
+import Home from './pages/Home/Home';
+import TechSummary from './pages/TechSummary/TechSummary';
+import CatStats from './pages/CatStats/CatStats';
+import Contact from './pages/Contact/Contact';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {

@@ -2,7 +2,7 @@ import React, { FunctionComponent, ReactNode } from 'react';
 import cnames from 'classnames';
 
 type Props = {
-    classnames?: Array<string>,
+    classnames?: Array<string> | string,
     children: ReactNode
 }
 

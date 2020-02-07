@@ -1,7 +1,7 @@
 import React from 'react';
-import Home from '../../pages/Home';
+import Bio from '../../../pages/Home/Bio';
 import { render } from '@testing-library/react';
 
 it('Home renders without crashing', () => {
-  render(<Home />);
+  render(<Bio bioText="me talking about how awesome I am"/>);
 });
