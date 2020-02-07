@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Header from '../../components/layout/Header';
-import { HashRouter as Router} from 'react-router-dom'
+import { HashRouter as Router} from 'react-router-dom';
+import { render } from '@testing-library/react';
 
 it('Header renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Router><Header /></Router>, div);
+  render(<Router><Header /></Router>);
 });

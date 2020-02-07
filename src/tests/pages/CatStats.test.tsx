@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import CatStats from '../../pages/CatStats';
+import { render } from '@testing-library/react';
 
 it('CatStats renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<CatStats />, div);
+  render(<CatStats />);
 });

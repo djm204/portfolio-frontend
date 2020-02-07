@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Route, Link } from 'react-router-dom'
+import { HashRouter as Route, Link } from 'react-router-dom';
 
 const Header = () => {
   return (

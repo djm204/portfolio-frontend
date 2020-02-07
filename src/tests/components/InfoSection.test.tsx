@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { InfoSection } from '../../components/layout/InfoSection';
+import { render } from '@testing-library/react';
 
 it('InfoSection renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<InfoSection>test</InfoSection>, div);
+  render(<InfoSection>test</InfoSection>, );
 });

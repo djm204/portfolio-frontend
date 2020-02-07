@@ -1,11 +1,11 @@
-import React from 'react'
-import Header from './components/layout/Header'
-import Footer from './components/layout/Header'
-import Home from './pages/Home'
-import TechSummary from './pages/TechSummary'
-import CatStats from './pages/CatStats'
-import Contact from './pages/Contact'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import React from 'react';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import Home from './pages/Home';
+import TechSummary from './pages/TechSummary';
+import CatStats from './pages/CatStats';
+import Contact from './pages/Contact';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
   return (
