@@ -1,12 +1,12 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 import cnames from 'classnames';
 
-type Props = {
+type InfoSectionProps = {
     classnames?: Array<string> | string,
     children: ReactNode
 }
 
-export const InfoSection: FunctionComponent<Props> = (props: Props) => {
+export const InfoSection: FunctionComponent<InfoSectionProps> = (props: InfoSectionProps) => {
     return (
         <div className={cnames('info-section', props.classnames)}>
             {props.children}
