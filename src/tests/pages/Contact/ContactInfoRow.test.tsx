@@ -8,6 +8,8 @@ it('Contact renders without crashing', () => {
         iconClass: 'facebookTest',
         contactProfileUrl: 'facebookTest'
     }
-    render(<ContactInfoRow {...contactRowInfo} />);
+    const { getByText } = render(<ContactInfoRow {...contactRowInfo} />);
+    
+    expect(getByText('facebookTest')).toBeInTheDocument();
 });
 
