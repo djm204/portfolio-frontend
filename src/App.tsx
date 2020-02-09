@@ -7,6 +7,13 @@ import CatStats from './pages/CatStats/CatStats';
 import Contact from './pages/Contact/Contact';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
+//FontAwesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFacebookSquare, faInstagramSquare, faTwitterSquare, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/pro-solid-svg-icons'
+
+library.add( faFacebookSquare, faInstagramSquare, faTwitterSquare, faLinkedin, faGithubSquare, faEnvelopeSquare );
+
 const App = () => {
   return (
     <Router>
