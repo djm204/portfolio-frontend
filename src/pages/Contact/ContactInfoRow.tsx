@@ -6,7 +6,7 @@ export type ContactInfoRowProps = {
     contactProfileUrl: string
 }
 
-const ContactInfoRow = (props: ContactInfoRowProps) => {
+export const ContactInfoRow = (props: ContactInfoRowProps) => {
     const { type, iconClass, contactProfileUrl } = props;
     return (
         <React.Fragment>
@@ -17,5 +17,3 @@ const ContactInfoRow = (props: ContactInfoRowProps) => {
         </React.Fragment>
     );
 }
-
-export default ContactInfoRow;
