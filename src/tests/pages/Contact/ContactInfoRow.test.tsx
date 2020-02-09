@@ -10,6 +10,6 @@ it('Contact renders without crashing', () => {
     }
     const { getByText } = render(<ContactInfoRow {...contactRowInfo} />);
 
-    expect(getByText('facebookTest')).toBeInTheDocument();
+    expect(getByText('FacebookTest')).toBeInTheDocument();
 });
 

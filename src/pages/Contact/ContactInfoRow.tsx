@@ -16,7 +16,7 @@ export const ContactInfoRow = (props: ContactInfoRowProps) => {
         <React.Fragment>
             <div>
                 <FontAwesomeIcon icon={iconClasses as IconName | [IconPrefix, IconName] | IconLookup} />
-                <a title={type} href={contactProfileUrl}>{contactProfileUrl}</a>
+                <a title={type} href={contactProfileUrl}>{type.charAt(0).toUpperCase() + type.slice(1)}</a>
             </div>
         </React.Fragment>
     );

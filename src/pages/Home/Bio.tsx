@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 type BioProps = {
-    bioText: string
+    children: ReactNode
 }
 
 const Bio = (props: BioProps) => {
     return (
         <div className="bio">
-            {props.bioText}
+            {props.children}
         </div>
     );
 }
