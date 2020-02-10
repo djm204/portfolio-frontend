@@ -10,9 +10,9 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 //FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookSquare, faInstagramSquare, faTwitterSquare, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeSquare } from '@fortawesome/pro-solid-svg-icons'
+import { faEnvelopeSquare, faChevronRight } from '@fortawesome/pro-solid-svg-icons'
 
-library.add( faFacebookSquare, faInstagramSquare, faTwitterSquare, faLinkedin, faGithubSquare, faEnvelopeSquare );
+library.add( faChevronRight, faFacebookSquare, faInstagramSquare, faTwitterSquare, faLinkedin, faGithubSquare, faEnvelopeSquare );
 
 const App = () => {
   return (
