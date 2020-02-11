@@ -1,3 +1,6 @@
+.HomePage {
+    padding-top: 100px;
+}
 .Bio {
     justify-content: center;
     align-content: space-between;
@@ -9,7 +12,42 @@
     flex-basis: 25%;
 }
 
-.Bio__Image .Bio__Image__Picture img{
+.Bio__Image .Bio__Image__Picture img {
     border-radius: 30em;
+}
 
+.CheckMe {
+    font-size: .5em;
+    border: 1px solid white;
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 1s linear;
+}
+
+.CheckMe:hover {
+    background: #2C3E50;
+}
+
+.CheckMe__Arrow {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
