@@ -6,7 +6,7 @@ type BioProps = {
 
 const Bio = (props: BioProps) => {
     return (
-        <div className="bio">
+        <div className="WriteUp">
             <h2>Bio</h2>
             {props.children}
         </div>

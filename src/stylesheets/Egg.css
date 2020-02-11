@@ -1,0 +1,12 @@
+.EggBert {
+    color: white;
+    width: 30px;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.EggBert:hover {
+    color: green;
+    cursor: pointer;
+}

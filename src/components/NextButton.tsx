@@ -11,13 +11,13 @@ type NextButtonProps = {
     buttonLabel: string
 }
 
-const NextButton = (props: NextButtonProps) => {
+const NextButton = (props: NextButtonProps) => { 
     const { linkUrl, classnames, title, buttonLabel } = props;
     const iconClass: Array<string> | string = ['fa', 'fa-chevron-right'];
     
     return (
-        <div className={cnames("next-button", classnames)}>
-            <Link title={title} to={linkUrl}>{buttonLabel}<FontAwesomeIcon icon={iconClass as IconName | [IconPrefix, IconName] | IconLookup} /> </Link>
+        <div className={cnames(" next-button", classnames)}>
+            <Link className="btn btn-primary" title={title} to={linkUrl}>{buttonLabel}<FontAwesomeIcon icon={iconClass as IconName | [IconPrefix, IconName] | IconLookup} /> </Link>
         </div>
     );
 }
