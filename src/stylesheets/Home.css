@@ -1,0 +1,15 @@
+.Bio {
+    justify-content: center;
+    align-content: space-between;
+    padding-top: 50px;
+}
+
+.Bio__Image {
+    text-align: center;
+    flex-basis: 25%;
+}
+
+.Bio__Image .Bio__Image__Picture img{
+    border-radius: 30em;
+
+}

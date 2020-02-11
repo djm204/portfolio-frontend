@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+#root {
+    height: 90vh;
+}
+
+#App__Container {
+    padding: 0 100px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.App__Header nav {
+    background: #2C3E50;
+    display: flex;
+}
+
+.App__Header nav a {
+    color: white;
+    padding: 10px 15px;
+    border-right: 1px solid white;
+}
+
+.App__Header nav a:hover {
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+    background: #1e2b37;
+}
+
+.info-section {
+    display: flex;
+}
+
+.contact-page, .tech-summary-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.next-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next-button a {
+    flex-basis: 15%;
+    margin-right: 100px;
+}
+
+footer {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 10px 0;
+}

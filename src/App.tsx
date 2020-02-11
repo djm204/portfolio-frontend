@@ -10,15 +10,15 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 //FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookSquare, faInstagramSquare, faTwitterSquare, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeSquare, faChevronRight } from '@fortawesome/pro-solid-svg-icons'
+import { faEnvelopeSquare, faChevronRight, faEgg } from '@fortawesome/pro-solid-svg-icons'
 
-library.add( faChevronRight, faFacebookSquare, faInstagramSquare, faTwitterSquare, faLinkedin, faGithubSquare, faEnvelopeSquare );
+library.add( faEgg, faChevronRight, faFacebookSquare, faInstagramSquare, faTwitterSquare, faLinkedin, faGithubSquare, faEnvelopeSquare );
 
 const App = () => {
   return (
     <Router>
-      <div id="app-container">
-        <Header />
+      <Header />
+      <div id="App__Container">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/tech-summary" component={TechSummary} />
