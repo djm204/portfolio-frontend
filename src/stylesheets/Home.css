@@ -14,6 +14,7 @@
 
 .Bio__Image .Bio__Image__Picture img {
     border-radius: 30em;
+    width: 300px;
 }
 
 .CheckMe {

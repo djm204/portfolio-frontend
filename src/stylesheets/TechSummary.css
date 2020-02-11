@@ -1,0 +1,7 @@
+.TechSummaryPage__Introduction__StatBars {
+    flex-basis:50%
+}
+
+.TechSummaryPage__InfoSection {
+    background-color: rgba(0,0,0,0.05);
+}

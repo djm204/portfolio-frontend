@@ -6,7 +6,7 @@ import Bio from './Bio';
 import '../../stylesheets/Home.css';
 
 const Home: FunctionComponent = () => {
-    const bioPicUrl = 'http://www.dev.desiratech.com/images/team-member1.jpg';
+    const bioPicUrl = 'david_on_a_mountain.jpg';
 
     return (
         <div
@@ -28,7 +28,7 @@ const Home: FunctionComponent = () => {
                 <div className="Bio__AndQuote">
                     <Bio>
                         <p>David is a life-long techy with an insatiable appetite for software development.</p>
-                        <p>He spends much of his free time in front of the PC creating and and furthering his knowledge about different technologies.</p>
+                        <p>He spends much of his free time in front of the PC creating and furthering his knowledge about different technologies such as JavaScript, GoLang and Python.</p>
                         <p>Staying up to date with technology, code coverage and best practices are very important to David.</p>
                     </Bio>
                     <div className="Quote">
