@@ -8,7 +8,7 @@ type InfoSectionProps = {
 
 export const InfoSection: FunctionComponent<InfoSectionProps> = (props: InfoSectionProps) => {
     return (
-        <div className={cnames('info-section', props.classnames)}>
+        <div {...props} className={cnames('InfoSection', props.classnames)}>
             {props.children}
         </div>
     );
