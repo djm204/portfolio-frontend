@@ -8,11 +8,12 @@ const Navigation = () => {
     const [fixedNav, setFixedNav] = useState();
 
     window.addEventListener('scroll', () => {
-        if(window.scrollY > 675 && !fixedNav) {
+        console.log(window.scrollY, );
+        if(window.scrollY > window.innerHeight-20 && !fixedNav) {
             setFixedNav(true);
         }
         
-        if(window.scrollY < 675 && fixedNav){
+        if(window.scrollY < 700 && fixedNav){
             setFixedNav(false);
         }
     });

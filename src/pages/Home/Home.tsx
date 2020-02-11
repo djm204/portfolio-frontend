@@ -13,6 +13,8 @@ const Home: FunctionComponent = () => {
             id="HomePage" 
             className="HomePage"
             data-aos="fade-in"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
             data-aos-duration="1000">
             <InfoSection classnames="Bio">
                 <div className="Bio__Image">
