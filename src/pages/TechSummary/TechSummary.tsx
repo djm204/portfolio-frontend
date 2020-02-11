@@ -1,10 +1,9 @@
 import React from 'react';
 import { InfoSection } from '../../components/layout/InfoSection';
-import NextButton from '../../components/NextButton';
 
 const TechSummary = () => {
     return (
-        <div className="tech-summary-page">
+        <div className="TechSummaryPage">
             <h1>Technical Summary</h1>
             <InfoSection classnames="tech-bio">
                 <div className="introduction">
@@ -77,23 +76,19 @@ const TechSummary = () => {
                 </ul>
                 <div className="section-picture"></div>
             </InfoSection>
-            <InfoSection classnames="go">
-                <h2>GoLang</h2>
-                <div>Completed the first iteration of the frontend of the app in its entirety.</div>
+            <InfoSection classnames="deep-roots">
+                <h2>Deep Roots Strong Dance</h2>
+                <div>Built and designed entire website.</div>
                 <ul>
                     <li>
-                        React/Redux App for converting prices in a Shopify store, by currency and ruleset define by the merchant.
+                        React/Redux App
                     </li>
                     <li>
-                        Integrates with Cashier to allow for charging in specific currencies.
+                        API endpoint for adding to mailing list
                     </li>
                 </ul>
                 <div className="section-picture"></div>
             </InfoSection>
-            <NextButton
-                linkUrl="/contact"
-                buttonLabel="Contact Me"
-                title="Contact Me Button" />
         </div>
     );
 }
