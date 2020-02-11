@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 
 import { InfoSection } from '../../components/layout/InfoSection';
 import Image from '../../components/Image';
-import NextButton from '../../components/NextButton';
 import Bio from './Bio';
 import '../../stylesheets/Home.css';
 
@@ -10,7 +9,11 @@ const Home: FunctionComponent = () => {
     const bioPicUrl = 'http://www.dev.desiratech.com/images/team-member1.jpg';
 
     return (
-        <div className="HomePage">
+        <div
+            id="HomePage" 
+            className="HomePage"
+            data-aos="fade-in"
+            data-aos-duration="1000">
             <InfoSection classnames="Bio">
                 <div className="Bio__Image">
                     <Image
@@ -34,10 +37,6 @@ const Home: FunctionComponent = () => {
                     </div>
                 </div>
             </InfoSection>
-            <NextButton
-                linkUrl="/tech-summary"
-                buttonLabel="Technical Summary"
-                title="Technical Summary Button" />
         </div>
     );
 }
