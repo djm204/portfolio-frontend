@@ -7,6 +7,7 @@ type BioProps = {
 const Bio = (props: BioProps) => {
     return (
         <div className="bio">
+            <h2>Bio</h2>
             {props.children}
         </div>
     );
