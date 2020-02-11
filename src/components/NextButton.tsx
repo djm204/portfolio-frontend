@@ -13,7 +13,7 @@ type NextButtonProps = {
 
 const NextButton = (props: NextButtonProps) => { 
     const { linkUrl, classnames, title, buttonLabel } = props;
-    const iconClass: Array<string> | string = ['fa', 'fa-chevron-right'];
+    const iconClass: Array<string> | string = 'chevron-right';
     
     return (
         <div className={cnames(" next-button", classnames)}>
