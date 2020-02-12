@@ -4,7 +4,7 @@ import '../../stylesheets/Contact.css';
 
 const Contact: FunctionComponent = () => {
     const onSubmitCompleted = () => {
-        alert(`No Backend 
+        alert(`No Backend Yet!
          Name: ${inputs.name}
          Email: ${inputs.email}`);
     }

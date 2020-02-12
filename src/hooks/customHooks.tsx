@@ -18,8 +18,6 @@ const useContactForm = (callback: Function) => {
     const [inputs, setInputs] = useState(initialState);
 
     const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
-        console.log(inputs)
-
         if (event) {
             event.preventDefault();
         }
@@ -28,8 +26,6 @@ const useContactForm = (callback: Function) => {
     }
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        console.log(inputs)
-
         event.persist();
         setInputs(inputs => ({ ...inputs, [event.target.name]: event.target.value }));
     }

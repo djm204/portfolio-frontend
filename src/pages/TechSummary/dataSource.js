@@ -7,10 +7,10 @@ export const projects = [
         imgSrc: '',
         points: [
             'Responsible for pair programming / mentoring and unblocking reports.',
-            'Delegation and prioritization of tasks with a workload of about 25-45 tickets per week.',
-            'React/Redux App on frontend for Admin and Checkout.',
+            'Delegation and prioritization of tasks.',
+            'React/Redux App for Admin and Checkout.',
             'Hybrid PHP / Go backend.',
-            '4 years on the team working to deliver features and bug fixes for both the frontend and backend.'
+            '4 years on the team.'
         ],
         dataAos: 'fade-right',
         dataAosDuration: '1000',
