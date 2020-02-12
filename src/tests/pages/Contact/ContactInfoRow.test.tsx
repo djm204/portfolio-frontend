@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactInfoRow } from '../../../pages/Contact/ContactInfoRow';
+import { SocialMediaRow } from '../../../components/SocialMedia';
 import { render } from '@testing-library/react';
 
 it('Contact renders without crashing', () => {
@@ -8,7 +8,7 @@ it('Contact renders without crashing', () => {
         iconClass: 'fab facebook',
         contactProfileUrl: 'facebookTest'
     }
-    const { getByText } = render(<ContactInfoRow {...contactRowInfo} />);
+    const { getByText } = render(<SocialMediaRow {...contactRowInfo} />);
 
     expect(getByText('FacebookTest')).toBeInTheDocument();
 });

@@ -20,15 +20,15 @@ const Project = (props: ProjectProps) => {
         const container = document.querySelector(`#${className}`);
         const backgroundImage = container?.querySelector('.Project__Image');
         let hiddenElements = [].slice.call(container?.querySelectorAll('.Project--hidden'));
-        
+
         hiddenElements.forEach((element: Element) => element.classList.remove('Project--hidden'));
         hiddenElements.forEach((element: Element) => element.classList.add('Project--SlideIn'));
         backgroundImage?.classList.remove('Project--visible');
         backgroundImage?.classList.add('Project--hidden');
     }
-    
+
     const hideElements = () => {
-        const container = document.querySelector(`#${className}`); 
+        const container = document.querySelector(`#${className}`);
         const backgroundImage = container?.querySelector('.Project__Image');
         let visibleElements = [].slice.call(container?.querySelectorAll('.Project--SlideIn'));
 
@@ -62,7 +62,7 @@ const Project = (props: ProjectProps) => {
                 </ul>
                 {link === 'NPA' ?
                     <span className="Project__NotPublic Project--hidden">*Not Publicly Available</span> :
-                    <a href={link} target="_blank" className="Project__Link Project--hidden">View Project</a>}
+                    <a href={link} rel="noopener noreferrer" target="_blank" className="Project__Link Project--hidden">View Project</a>}
             </div>
             <img className="Project__Image" alt={name} src={imgSrc} />
         </div>
