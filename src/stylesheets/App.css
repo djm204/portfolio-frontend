@@ -66,14 +66,6 @@ body {
     margin-right: 100px;
 }
 
-footer {
-    flex-grow: 1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 10px 0;
-}
-
 @keyframes popDown {
     0% {
         transform: translateY(-100px);

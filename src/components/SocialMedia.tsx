@@ -1,23 +1,22 @@
-import React from 'react';
-import {  IconName, IconPrefix, IconLookup } from '@fortawesome/fontawesome-svg-core';
+import React, { FunctionComponent } from 'react';
+import { IconName, IconPrefix, IconLookup } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export type ContactInfoRowProps = {
+export type SocialMediaRowProps = {
     type: string,
     iconClass: string,
     contactProfileUrl: string
 }
 
-export const ContactInfoRow = (props: ContactInfoRowProps) => {
+export const SocialMediaRow: FunctionComponent<SocialMediaRowProps> = (props: SocialMediaRowProps) => {
     const { type, iconClass, contactProfileUrl } = props;
     const iconClasses = iconClass.indexOf(' ') > -1 ? iconClass.split(' ') : iconClass;
 
     return (
         <React.Fragment>
-            <div>
+            <a title={type} href={contactProfileUrl}>
                 <FontAwesomeIcon icon={iconClasses as IconName | [IconPrefix, IconName] | IconLookup} />
-                <a title={type} href={contactProfileUrl}>{type.charAt(0).toUpperCase() + type.slice(1)}</a>
-            </div>
+            </a>
         </React.Fragment>
     );
 }

@@ -87,8 +87,9 @@
 .Project__Link:hover {
     text-decoration: none;
     color: white;
-    background-color: rgba(3, 85, 85, 0.7);
+    background-color: #04c2c9;
     border: 1px solid rgb(3, 85, 85);
+    transition: background-color ease-in-out 0.2s;
 }
 
 @keyframes slideLeft {

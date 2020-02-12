@@ -1,25 +1,48 @@
-import React, { useState, useEffect, FunctionComponent } from 'react';
-import { ContactInfoRow, ContactInfoRowProps } from './ContactInfoRow'
-import { get } from '../../helpers/api';
+import React, { FunctionComponent } from 'react';
+import useContactForm from '../../hooks/customHooks';
+import '../../stylesheets/Contact.css';
 
 const Contact: FunctionComponent = () => {
-    const [contactInfo, setContactInfo] = useState();
+    const onSubmitCompleted = () => {
+        alert(`No Backend 
+         Name: ${inputs.name}
+         Email: ${inputs.email}`);
+    }
 
-    //ComponentDidMount
-    useEffect(() => {
-        get({ url: '/contactInfo' })
-            .then(contactInfo => setContactInfo(contactInfo))
-            .catch(err => console.error(err));
-    }, []);
+    const { inputs, handleInputChange, handleSubmit } = useContactForm(onSubmitCompleted);
 
     return (
-        <div className="contact-page">
-            <h1>Contact Me</h1>
-            <p>If you would like to reach me feel free to use any of the following:</p>
-            <div className="contact-info-wrapper">
-                {contactInfo ?
-                    contactInfo.map((contact: ContactInfoRowProps) => <ContactInfoRow key={JSON.stringify(contact)} {...contact} />) :
-                    null}
+        <div className="Contact">
+            <h2>Contact Me</h2>
+            <div className="Contact__Form__Wrapper">
+                <form className="Contact__Form" onSubmit={handleSubmit}>
+                    <input
+                        onChange={handleInputChange}
+                        value={inputs.name}
+                        type="text"
+                        name="name"
+                        placeholder="*Name"
+                        required />
+                    <input
+                        onChange={handleInputChange}
+                        value={inputs.email}
+                        type="email"
+                        placeholder="*Enter email"
+                        name="email"
+                        required />
+                    <input
+                        onChange={handleInputChange}
+                        value={inputs.phone}
+                        type="tel"
+                        placeholder="Phone (optional)"
+                        name="phone" />
+                    <textarea
+                        onChange={handleInputChange}
+                        name="message"
+                        placeholder="*I'd love to hear from you!"
+                        required>{inputs.message}</textarea>
+                    <input className="btn btn-primary" type="submit" value="Submit" />
+                </form>
             </div>
         </div>
     );
