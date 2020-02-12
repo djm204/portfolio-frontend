@@ -1,7 +1,98 @@
 .TechSummaryPage__Introduction__StatBars {
-    flex-basis:50%
+    flex-basis: 50%
 }
 
 .TechSummaryPage__InfoSection {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.TechSummaryPage__Projects {
+    flex-direction: column;
+}
+
+.TechSummaryPage__Projects h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    padding-bottom: 20px;
+}
+
+.TechSummary__Projects__Wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Project {
+    padding: 25px;
+    position: relative;
+    width: 25%;
+}
+
+.Project--hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.Project--visible {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.Project--SlideIn {
+    visibility: visible;
+    transform: translateX(150px);
+    animation: slideLeft 0.8s ease forwards;
+}
+
+.Project--SlideIn:nth-child(odd) {
+    animation-duration: 0.6s;
+}
+
+.Project__Role {
+    font-style: italic;
+    transition: all 1s ease-in-out;
+}
+
+.Project__Details {
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+
+.Project__Image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.Project__Notables {
+    list-style: none;
+}
+
+.Project__NotPublic {
+    font-weight: bold;
+}
+
+.Project__Link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid teal;
+}
+
+.Project__Link:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(3, 85, 85, 0.7);
+    border: 1px solid rgb(3, 85, 85);
+}
+
+@keyframes slideLeft {
+    to {
+        transform: translateX(0px);
+    }
 }
