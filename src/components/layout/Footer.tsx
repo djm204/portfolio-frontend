@@ -12,7 +12,7 @@ const Footer: FunctionComponent = () => {
             .then(contactInfo => setContactInfo(contactInfo))
             .catch((err: any) => console.error(err));
     }, []);
-    
+
     return (
         <footer>
             <div className="SocialMedia__Wrapper">
@@ -20,7 +20,7 @@ const Footer: FunctionComponent = () => {
                     contactInfo.map((contact: SocialMediaRowProps) => <SocialMediaRow key={JSON.stringify(contact)} {...contact} />) :
                     null}
             </div>
-            <div>&copy; David Mendez  2010 - {new Date().getFullYear()}</div>
+            <div>   &copy;2010 - {new Date().getFullYear()} David Mendez</div>
         </footer>
     );
 }
