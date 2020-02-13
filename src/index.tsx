@@ -4,6 +4,7 @@ import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import './stylesheets/App.css'
+import './stylesheets/MediaQueries.css'
 
 ReactDOM.render(<App />, document.getElementById('root'))
 

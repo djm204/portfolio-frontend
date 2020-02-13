@@ -25,7 +25,7 @@
     "aos": "^3.0.0-beta.6",
     "classnames": "^2.2.6",
     "eslint-plugin-flowtype": "^3.13.0",
-    "jest": "^25.1.0",
+    "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "promise": "^8.0.3",
     "react": "^16.12.0",

@@ -11,6 +11,11 @@
 .Bio__Image {
   text-align: center;
   flex-basis: 50%;
+  font-size: 1.12em;
+}
+
+.Bio__Image h4 .Bio__Image h5 {
+  font-size: 1.5em;
 }
 
 .Bio__Image .Bio__Image__Picture img {
