@@ -67,6 +67,30 @@ body {
     margin-right: 100px;
 }
 
+.HorizontalSeparator.left-to-right.lighter{
+    background-color: rgba(172, 197, 255,.4);
+    clip-path: polygon(0px 67px, 100% 7px, 100% 106%, 0px 122%);
+    height: 138px;
+}
+
+.HorizontalSeparator.left-to-right.darker{
+    background-color: rgba(126, 165, 255,.4);
+    clip-path: polygon(0px 67px, 100% 7px, 100% 106%, 0px 122%);
+    height: 138px;
+}
+
+.HorizontalSeparator.right-to-left.lighter{
+    background-color: rgba(172, 197, 255,.4);
+    clip-path: polygon(0 -4px,100% 0px,100% 100%,0px 63.31%);
+    height: 138px;
+}
+
+.HorizontalSeparator.right-to-left.darker{
+    background-color: rgba(126, 165, 255,.4);
+    clip-path: polygon(0 -4px,100% 0px,100% 100%,0px 63.31%);
+    height: 138px;
+}
+
 @keyframes popDown {
     0% {
         transform: translateY(-100px);

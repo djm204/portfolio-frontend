@@ -5,6 +5,7 @@ import About from './pages/About/About';
 import TechSummary from './pages/TechSummary/TechSummary';
 import Contact from './pages/Contact/Contact';
 import Navigation from './components/Navigation';
+import HorizontalSeparator from './components/layout/HorizontalSeparator';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -20,10 +21,12 @@ const App = () => {
       <div id="App__Container">
       <Header />
       <Navigation />
-          <About />
+          <About /> 
+          <HorizontalSeparator classnames={['lighter', 'left-to-right']} />
           <TechSummary />
+          <HorizontalSeparator classnames={['darker', 'left-to-right']} />
           <Contact />
-        <Footer />
+          <Footer />
       </div>
   );
 }

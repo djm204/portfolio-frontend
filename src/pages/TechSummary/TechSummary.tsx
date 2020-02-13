@@ -4,7 +4,7 @@ import Project from './Project';
 import StatsBar from './StatsBar';
 import '../../stylesheets/TechSummary.css'
 import { skills, projects } from './dataSource';
-
+import HorizontalSeparator from '../../components/layout/HorizontalSeparator';
 
 const TechSummary = () => {
     return (
@@ -29,6 +29,7 @@ const TechSummary = () => {
                     <small>* Percentages represent level of confidence in respective technologies</small>
                 </div>
             </InfoSection>
+            <HorizontalSeparator classnames={['lighter', 'right-to-left']} />
             <InfoSection id="Projects" classnames="TechSummaryPage__Projects">
                 <h2>Projects</h2>
                 <div className="TechSummary__Projects__Wrapper">

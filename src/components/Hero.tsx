@@ -11,7 +11,7 @@ const Hero = () => {
             });
         }
     }
-    
+
     return (
         <React.Fragment>
             <div className='App__Header__Title'>

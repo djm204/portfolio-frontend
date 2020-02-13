@@ -9,7 +9,7 @@ const HorizontalSeparator: FunctionComponent<HorizontalSeparatorProps> = (props:
     const { classnames } = props;
 
     return (
-        <div className={cnames(classnames)}></div>
+        <div className={cnames('HorizontalSeparator', classnames)}></div>
     );
 }
 
