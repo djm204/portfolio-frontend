@@ -43,9 +43,8 @@ const Contact: FunctionComponent = () => {
             name="message"
             placeholder="*I'd love to hear from you!"
             required
-          >
-            {inputs.message}
-          </textarea>
+            value={inputs.message}
+          ></textarea>
           <input className="btn btn-primary" type="submit" value="Submit" />
         </form>
       </div>

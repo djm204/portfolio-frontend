@@ -102,7 +102,7 @@
 .Project__Link__Wrapper {
   flex-grow: 1;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 .Project__Link,
 .Project__Link a {

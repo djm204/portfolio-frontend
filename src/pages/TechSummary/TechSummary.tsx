@@ -43,7 +43,9 @@ const TechSummary = () => {
           {skills.map(skill => (
             <StatsBar key={JSON.stringify(skill)} {...skill} />
           ))}
-          <small>* Percentages represent level of confidence in respective technologies</small>
+          <small>
+            * Percentages represent level of confidence when working with respective technologies
+          </small>
         </div>
       </InfoSection>
       <HorizontalSeparator
