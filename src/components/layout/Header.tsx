@@ -1,6 +1,6 @@
-import React from 'react';
-import Hero from '../Hero';
-import '../../stylesheets/Header.css';
+import React from 'react'
+import Hero from '../Hero'
+import '../../stylesheets/Header.css'
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
       <div className="Swoosh--3"></div>
       <Hero />
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

@@ -1,25 +1,25 @@
 footer {
-    flex-direction: column;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px 0;
-    background: rgba(0, 34, 111, 1);
-    color: rgba(172, 197, 255, 1);
-    height: 150px;
+  flex-direction: column;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 0;
+  background: rgba(0, 34, 111, 1);
+  color: rgba(172, 197, 255, 1);
+  height: 150px;
 }
 
 footer a {
-    color: rgba(172, 197, 255, 1);
-    margin: 0 10px;
+  color: rgba(172, 197, 255, 1);
+  margin: 0 10px;
 }
 
 footer a:hover {
-    color: rgba(255, 170, 0, 1);
+  color: rgba(255, 170, 0, 1);
 }
 
 .SocialMedia__Wrapper {
-    display: flex;
-    font-size: 2.5em;
+  display: flex;
+  font-size: 2.5em;
 }

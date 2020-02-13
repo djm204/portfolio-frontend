@@ -1,111 +1,112 @@
 .TechSummaryPage__Introduction__StatBars {
-    flex-basis: 50%
+  flex-basis: 50%;
 }
 
 .TechSummaryPage__InfoSection {
-    background-color: rgba(172, 197, 255,.4);
+  background-color: rgba(172, 197, 255, 0.4);
 }
 
 .TechSummaryPage__Projects {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .TechSummaryPage__Projects h2 {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .TechSummary__Projects__Wrapper {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .Project {
-    padding: 25px;
-    position: relative;
-    width: 25%;
+  padding: 25px;
+  position: relative;
+  width: 25%;
 }
 
 .Project--hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: all .2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .Project--visible {
-    visibility: visible;
-    opacity: 1;
-    transition: all 1s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s ease-in-out;
 }
 
 .Project--SlideIn {
-    visibility: visible;
-    transform: translateX(150px);
-    animation: slideLeft 0.8s ease forwards;
+  visibility: visible;
+  transform: translateX(150px);
+  animation: slideLeft 0.8s ease forwards;
 }
 
 .Project--SlideIn:nth-child(odd) {
-    animation-duration: 0.6s;
+  animation-duration: 0.6s;
 }
 
 .Project__Role {
-    font-style: italic;
-    transition: all 1s ease-in-out;
+  font-style: italic;
+  transition: all 1s ease-in-out;
 }
 
 .Project__Details {
-    transition: all 1s ease-in-out;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 250px;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
 }
 
 .Project__Image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .Project__Notables {
-    list-style: none;
+  list-style: none;
 }
 
 .Project__NotPublic {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .Project__Link__Wrapper {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-start;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
 }
-.Project__Link, .Project__Link a{
-    color: rgb(0, 34, 111);
+.Project__Link,
+.Project__Link a {
+  color: rgb(0, 34, 111);
 }
 
 .Project__Link {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 3px;
-    border: 1px solid rgba(26, 95, 255, 1);
-    margin-top: auto;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid rgba(26, 95, 255, 1);
+  margin-top: auto;
 }
 
 .Project__Link:hover {
-    text-decoration: none;
-    color: rgba(172, 197, 255, 1);
-    background-color: rgba(26, 95, 255, 1);
-    border: 1px solid rgb(0, 34, 111);
-    transition: background-color ease-in-out 0.2s;
+  text-decoration: none;
+  color: rgba(172, 197, 255, 1);
+  background-color: rgba(26, 95, 255, 1);
+  border: 1px solid rgb(0, 34, 111);
+  transition: background-color ease-in-out 0.2s;
 }
 
 @keyframes slideLeft {
-    to {
-        transform: translateX(0px);
-    }
+  to {
+    transform: translateX(0px);
+  }
 }

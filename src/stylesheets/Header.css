@@ -11,9 +11,9 @@
   top: 50%;
   left: 0;
   right: 0;
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: "lato", sans-serif;
+  font-family: 'lato', sans-serif;
   font-weight: 300;
   font-size: 50px;
   letter-spacing: 10px;
@@ -31,7 +31,11 @@
   clip-path: polygon(0px 17px, 99.95% 42px, 100% 20%, 0px 107%);
   height: 200px;
   background: rgba(87, 101, 134, 0.3);
-  background: radial-gradient(ellipse at right, rgba(26, 95, 255, .5) 0%, rgba(0, 63, 209, .8) 100%);
+  background: radial-gradient(
+    ellipse at right,
+    rgba(26, 95, 255, 0.5) 0%,
+    rgba(0, 63, 209, 0.8) 100%
+  );
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -40,17 +44,18 @@
 .Swoosh--2 {
   clip-path: polygon(4px 4px, 99.84% 0px, 100% 20%, 1907px 72%);
   height: 200px;
-  background: radial-gradient(ellipse at left, rgba(26, 95, 255, .5) 0%, rgba(0, 63, 209, .8) 100%);
+  background: radial-gradient(
+    ellipse at left,
+    rgba(26, 95, 255, 0.5) 0%,
+    rgba(0, 63, 209, 0.8) 100%
+  );
   width: 100%;
   position: absolute;
   top: 0;
 }
 
-.Swoosh--3 {}
-
-
 .CheckMe {
-  font-size: .5em;
+  font-size: 0.5em;
   border: 1px solid white;
   display: inline-block;
   width: auto;
@@ -61,7 +66,7 @@
 }
 
 .CheckMe:hover {
-  background: rgba(255, 170, 0, .5);
+  background: rgba(255, 170, 0, 0.5);
 }
 
 .CheckMe__Arrow {
@@ -70,18 +75,18 @@
 
 @keyframes float {
   0% {
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
 
   50% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 
   75% {
-      transform: translateY(10px);
+    transform: translateY(10px);
   }
 
   100% {
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
 }

@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from '../../components/Image';
-import { render } from '@testing-library/react';
+import React from 'react'
+import Image from '../../components/Image'
+import { render } from '@testing-library/react'
 
 it('Footer renders without crashing', () => {
-  render(<Image imgUrl="aSource" altText="altText" />);
-});
+  render(<Image imgUrl="aSource" altText="altText" />)
+})

@@ -1,11 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 const CatStats = () => {
-    return (
-        <React.Fragment>
-            cat stats
-        </React.Fragment>
-    );
+  return <React.Fragment>cat stats</React.Fragment>
 }
 
-export default CatStats;
+export default CatStats

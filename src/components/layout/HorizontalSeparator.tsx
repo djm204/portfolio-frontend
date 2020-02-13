@@ -1,16 +1,16 @@
-import React, { FunctionComponent } from 'react';
-import cnames from 'classnames';
+import React, { FunctionComponent } from 'react'
+import cnames from 'classnames'
 
 type HorizontalSeparatorProps = {
-    classnames?: string | Array<string>
+  classnames?: string | Array<string>
 }
 
-const HorizontalSeparator: FunctionComponent<HorizontalSeparatorProps> = (props: HorizontalSeparatorProps) => {
-    const { classnames } = props;
+const HorizontalSeparator: FunctionComponent<HorizontalSeparatorProps> = (
+  props: HorizontalSeparatorProps
+) => {
+  const { classnames } = props
 
-    return (
-        <div className={cnames('HorizontalSeparator', classnames)}></div>
-    );
+  return <div className={cnames('HorizontalSeparator', classnames)}></div>
 }
 
-export default HorizontalSeparator;
+export default HorizontalSeparator
