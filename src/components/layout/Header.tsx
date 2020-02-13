@@ -1,13 +1,15 @@
 import React from 'react';
-import '../../stylesheets/Stars.css';
-
-import Stars from '../Stars';
+import Hero from '../Hero';
+import '../../stylesheets/Header.css';
 
 const Header = () => {
   return (
-      <header className="App__Header">
-        <Stars />
-      </header>
+    <header className="App__Header">
+      <div className="Swoosh--1"></div>
+      <div className="Swoosh--2"></div>
+      <div className="Swoosh--3"></div>
+      <Hero />
+    </header>
   );
 }
 

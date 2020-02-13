@@ -1,35 +1,35 @@
 .StatsBar__Wrapper {
-    background: teal;
+    background: rgba(26, 95, 255, 1);
     margin: 5px;
     padding: 5px;
     display: flex;
 }
 
-.StatsBar__Name{
+.StatsBar__Name {
     color: white;
-    background-color: teal;
+    background-color: rgba(26, 95, 255, 1);
     padding: 2px;
     text-align: center;
     width: 85px;
 }
 
 .StatsBar {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(172, 197, 255, 1);
     animation: animateStatsBar ease-out 8s;
     height: 100%;
-    color: teal;
+    color: rgba(0, 44, 144, 1);
     padding-left: 5px;
-    border-bottom: 3px solid #04c2c9;
+    border-bottom: 3px solid rgba(0, 34, 111, 1);
 }
 
 .StatsBar__Container {
     flex-basis: 100%;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(126, 165, 255, 1);
     margin-left: 5px;
 }
 
 @keyframes animateStatsBar {
     from {
-        width:0;
+        width: 0;
     }
 }

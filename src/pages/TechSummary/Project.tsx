@@ -60,9 +60,12 @@ const Project = (props: ProjectProps) => {
                         points.map(point => <li key={point}>{point}</li>) :
                         <li>{points}</li>}
                 </ul>
-                {link === 'NPA' ?
-                    <span className="Project__NotPublic Project--hidden">*Not Publicly Available</span> :
-                    <a href={link} rel="noopener noreferrer" target="_blank" className="Project__Link Project--hidden">View Project</a>}
+                <div className="Project__Link__Wrapper">
+                    {link === 'NPA' ?
+                        <span className="Project__NotPublic Project--hidden">*Not Publicly Available</span> :
+                        <a href={link} rel="noopener noreferrer" target="_blank" className="Project__Link Project--hidden">View Project</a>}
+
+                </div>
             </div>
             <img className="Project__Image" alt={name} src={imgSrc} />
         </div>

@@ -1,0 +1,87 @@
+.App__Header {
+  height: 100vh;
+  background-color: rgba(0, 44, 145, 1);
+  background: radial-gradient(circle at right, rgba(26, 95, 255, 1) 0%, rgba(0, 44, 145, 1) 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.App__Header__Title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+.App__Header__Title__Name {
+  background: -webkit-linear-gradient(rgba(166, 111, 0, 1), rgba(255, 116, 0, 1));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Swoosh--1 {
+  clip-path: polygon(0px 17px, 99.95% 42px, 100% 20%, 0px 107%);
+  height: 200px;
+  background: rgba(87, 101, 134, 0.3);
+  background: radial-gradient(ellipse at right, rgba(26, 95, 255, .5) 0%, rgba(0, 63, 209, .8) 100%);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.Swoosh--2 {
+  clip-path: polygon(4px 4px, 99.84% 0px, 100% 20%, 1907px 72%);
+  height: 200px;
+  background: radial-gradient(ellipse at left, rgba(26, 95, 255, .5) 0%, rgba(0, 63, 209, .8) 100%);
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.Swoosh--3 {}
+
+
+.CheckMe {
+  font-size: .5em;
+  border: 1px solid white;
+  display: inline-block;
+  width: auto;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 1s linear;
+  margin-top: 50px;
+}
+
+.CheckMe:hover {
+  background: rgba(255, 170, 0, .5);
+}
+
+.CheckMe__Arrow {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0px);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+
+  75% {
+      transform: translateY(10px);
+  }
+
+  100% {
+      transform: translateY(0px);
+  }
+}

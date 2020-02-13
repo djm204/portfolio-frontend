@@ -12,7 +12,7 @@ const Contact: FunctionComponent = () => {
     const { inputs, handleInputChange, handleSubmit } = useContactForm(onSubmitCompleted);
 
     return (
-        <div className="Contact">
+        <div id="Contact" className="Contact">
             <h2>Contact Me</h2>
             <div className="Contact__Form__Wrapper">
                 <form className="Contact__Form" onSubmit={handleSubmit}>

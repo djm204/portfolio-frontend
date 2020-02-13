@@ -5,6 +5,7 @@
 html {
     height: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,22 +23,22 @@ body {
 }
 
 .Nav {
-    background: #2C3E50;
+    background: rgba(0, 34, 111, 1);
     display: flex;
     z-index: 99999999;
 }
 
 .Nav a {
-    color: white;
+    color: rgba(172, 197, 255, 1);
     padding: 10px 15px;
     border-right: 1px solid white;
 }
 
 .Nav a:hover {
-    color: white;
+    color: rgba(216, 144, 0, 1);
     text-decoration: none;
     border-right: 1px solid white;
-    background: #1e2b37;
+    background: rgba(26, 95, 255, .6);
 }
 
 .Nav__Fixed {

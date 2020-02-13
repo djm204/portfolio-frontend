@@ -3,6 +3,7 @@ import cnames from 'classnames';
 
 type InfoSectionProps = {
     classnames?: Array<string> | string,
+    id?: string,
     children: ReactNode
 }
 

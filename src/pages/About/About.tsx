@@ -3,15 +3,15 @@ import React, { FunctionComponent } from 'react';
 import { InfoSection } from '../../components/layout/InfoSection';
 import Image from '../../components/Image';
 import Bio from './Bio';
-import '../../stylesheets/Home.css';
+import '../../stylesheets/About.css';
 
 const Home: FunctionComponent = () => {
     const bioPicUrl = 'david_on_a_mountain.jpg';
 
     return (
         <div
-            id="HomePage" 
-            className="HomePage"
+            id="About" 
+            className="About"
             data-aos="fade-in"
             data-aos-easing="ease-in-out"
             data-aos-once="true"

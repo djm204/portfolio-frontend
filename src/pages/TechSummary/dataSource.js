@@ -6,7 +6,7 @@ export const projects = [
         link: 'NPA',
         imgSrc: '',
         points: [
-            'Responsible for pair programming / mentoring and unblocking reports.',
+            'Pair programming / mentoring & unblocking reports.',
             'Delegation and prioritization of tasks.',
             'React/Redux App for Admin and Checkout.',
             'Hybrid PHP / Go backend.',

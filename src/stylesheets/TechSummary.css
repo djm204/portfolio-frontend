@@ -3,7 +3,7 @@
 }
 
 .TechSummaryPage__InfoSection {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 12, 61, 0.1)
 }
 
 .TechSummaryPage__Projects {
@@ -12,9 +12,8 @@
 
 .TechSummaryPage__Projects h2 {
     text-align: center;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .TechSummary__Projects__Wrapper {
@@ -31,7 +30,7 @@
 .Project--hidden {
     visibility: hidden;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .Project--visible {
@@ -58,6 +57,9 @@
 .Project__Details {
     transition: all 1s ease-in-out;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
 }
 
 .Project__Image {
@@ -77,18 +79,28 @@
     font-weight: bold;
 }
 
+.Project__Link__Wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.Project__Link, .Project__Link a{
+    color: rgb(0, 34, 111);
+}
+
 .Project__Link {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 3px;
-    border: 1px solid teal;
+    border: 1px solid rgba(26, 95, 255, 1);
+    margin-top: auto;
 }
 
 .Project__Link:hover {
     text-decoration: none;
-    color: white;
-    background-color: #04c2c9;
-    border: 1px solid rgb(3, 85, 85);
+    color: rgba(172, 197, 255, 1);
+    background-color: rgba(26, 95, 255, 1);
+    border: 1px solid rgb(0, 34, 111);
     transition: background-color ease-in-out 0.2s;
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import Home from './pages/Home/Home';
+import About from './pages/About/About';
 import TechSummary from './pages/TechSummary/TechSummary';
 import Contact from './pages/Contact/Contact';
 import Navigation from './components/Navigation';
@@ -20,7 +20,7 @@ const App = () => {
       <div id="App__Container">
       <Header />
       <Navigation />
-          <Home />
+          <About />
           <TechSummary />
           <Contact />
         <Footer />

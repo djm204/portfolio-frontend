@@ -5,19 +5,18 @@ footer {
     align-items: center;
     justify-content: flex-end;
     padding: 10px 0;
-    background-color: #021427;
-    background-color: rgba(2, 20, 39, 1);
-    color: white;
+    background: rgba(0, 34, 111, 1);
+    color: rgba(172, 197, 255, 1);
     height: 150px;
 }
 
 footer a {
-    color: white;
+    color: rgba(172, 197, 255, 1);
     margin: 0 10px;
 }
 
 footer a:hover {
-    color: #04c2c9;
+    color: rgba(255, 170, 0, 1);
 }
 
 .SocialMedia__Wrapper {

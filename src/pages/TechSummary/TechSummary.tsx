@@ -8,7 +8,7 @@ import { skills, projects } from './dataSource';
 
 const TechSummary = () => {
     return (
-        <div className="TechSummaryPage">
+        <div id="TechSummary" className="TechSummaryPage">
             <InfoSection
                 data-aos="fade-left"
                 data-aos-duration="1000"
@@ -26,9 +26,10 @@ const TechSummary = () => {
                 </div>
                 <div className="TechSummaryPage__Introduction__StatBars">
                     {skills.map(skill => <StatsBar key={JSON.stringify(skill)} {...skill} />)}
+                    <small>* Percentages represent level of confidence in respective technologies</small>
                 </div>
             </InfoSection>
-            <InfoSection classnames="TechSummaryPage__Projects">
+            <InfoSection id="Projects" classnames="TechSummaryPage__Projects">
                 <h2>Projects</h2>
                 <div className="TechSummary__Projects__Wrapper">
                     {projects.map(project => <Project key={JSON.stringify(project)} {...project} />)}
