@@ -49,26 +49,18 @@ const Project = (props: ProjectProps) => {
     backgroundImage?.classList.add('Project--visible')
   }
   return (
-    <div
-      id={className}
-      className={cnames('Project', className)}
-      data-aos={dataAos}
-      data-aos-duration={dataAosDuration}
-      data-aos-easing={dataAosEasing}
-      data-aos-once={dataAosOnce}
-      onMouseEnter={() => showElements()}
-      onMouseLeave={() => hideElements()}
-    >
+    <div id={className} className={cnames('Project', className)}>
+      <img className="Project__Image" alt={name} src={imgSrc} />
       <div className="Project__Details">
         <h3
-          className="Project__Name Project--hidden"
+          className="Project__Name "
           data-aos-duration={dataAosDuration}
           data-aos-easing={dataAosEasing}
         >
           {name}
         </h3>
-        <div className="Project__Role Project--hidden">{role}</div>
-        <ul className="Project__Notables Project--hidden">
+        <div className="Project__Role ">{role}</div>
+        <ul className="Project__Notables ">
           {typeof points !== 'string' ? (
             points.map(point => <li key={point}>{point}</li>)
           ) : (
@@ -77,20 +69,14 @@ const Project = (props: ProjectProps) => {
         </ul>
         <div className="Project__Link__Wrapper">
           {link === 'NPA' ? (
-            <span className="Project__NotPublic Project--hidden">*Not Publicly Available</span>
+            <span className="Project__NotPublic ">*Not Publicly Available</span>
           ) : (
-            <a
-              href={link}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="Project__Link Project--hidden"
-            >
+            <a href={link} rel="noopener noreferrer" target="_blank" className="Project__Link">
               View Project
             </a>
           )}
         </div>
       </div>
-      <img className="Project__Image" alt={name} src={imgSrc} />
     </div>
   )
 }

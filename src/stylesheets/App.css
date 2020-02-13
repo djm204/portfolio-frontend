@@ -71,6 +71,19 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  margin-bottom: 0px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .hidden {
   visibility: hidden;
 }

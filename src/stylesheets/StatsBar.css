@@ -3,6 +3,7 @@
   margin: 5px;
   padding: 5px;
   display: flex;
+  border-radius: 5px;
 }
 
 .StatsBar__Name {
@@ -10,7 +11,7 @@
   background-color: rgba(26, 95, 255, 1);
   padding: 2px;
   text-align: center;
-  width: 85px;
+  width: 107px;
 }
 
 .StatsBar {
@@ -19,12 +20,14 @@
   height: 100%;
   color: rgba(0, 44, 144, 1);
   padding-left: 5px;
+  border-radius: 5px;
 }
 
 .StatsBar__Container {
   flex-basis: 100%;
   background-color: rgba(126, 165, 255, 1);
   margin-left: 5px;
+  border-radius: 5px;
 }
 
 @keyframes animateStatsBar {
