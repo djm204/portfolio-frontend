@@ -27,30 +27,6 @@ code::before {
   flex-direction: column;
 }
 
-.Nav {
-  background: rgba(0, 34, 111, 1);
-  display: flex;
-  z-index: 99999999;
-  letter-spacing: 0.09em;
-}
-
-.Nav a {
-  color: rgba(172, 197, 255, 1);
-  padding: 10px 15px;
-}
-
-.Nav a:hover {
-  color: rgba(216, 144, 0, 1);
-  text-decoration: none;
-  background: rgba(26, 95, 255, 0.6);
-}
-
-.Nav__Fixed {
-  position: fixed;
-  width: 100%;
-  animation: popDown ease-out 0.5s;
-}
-
 .InfoSection {
   display: flex;
   padding: 50px;

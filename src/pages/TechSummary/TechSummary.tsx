@@ -8,14 +8,16 @@ import HorizontalSeparator from '../../components/layout/HorizontalSeparator'
 
 const TechSummary = () => {
   return (
-    <div id="TechSummary" className="TechSummaryPage">
-      <InfoSection
-        data-aos="fade-left"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        classnames="TechSummaryPage__InfoSection"
-      >
+    <div
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-once="true"
+      id="TechSummary"
+      className="TechSummaryPage"
+    >
+      <HorizontalSeparator classnames={['lighter', 'left-to-right']} />
+      <InfoSection classnames="TechSummaryPage__InfoSection">
         <div className="TechSummaryPage__Introduction">
           <h2>A Brief History</h2>
           <p>
@@ -48,13 +50,7 @@ const TechSummary = () => {
           </small>
         </div>
       </InfoSection>
-      <HorizontalSeparator
-        data-aos="fade-left"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        classnames={['lighter', 'right-to-left']}
-      />
+      <HorizontalSeparator classnames={['lighter', 'right-to-left']} />
       <InfoSection id="Projects" classnames="TechSummaryPage__Projects">
         <h2>Projects</h2>
         <div className="TechSummary__Projects__Wrapper">

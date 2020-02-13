@@ -21,11 +21,13 @@ import {
   faEnvelopeSquare,
   faChevronRight,
   faEgg,
+  faBars,
 } from '@fortawesome/pro-solid-svg-icons'
 
 AOS.init()
 
 library.add(
+  faBars,
   faArrowAltDown,
   faEgg,
   faChevronRight,
@@ -43,13 +45,6 @@ const App = () => {
       <Header />
       <Navigation />
       <About />
-      <HorizontalSeparator
-        data-aos="fade-left"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        classnames={['lighter', 'left-to-right']}
-      />
       <TechSummary />
       <HorizontalSeparator classnames={['darker', 'left-to-right']} />
       <Contact />
