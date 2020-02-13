@@ -1,3 +1,9 @@
+.TechSummaryPage__Introduction {
+  letter-spacing: 0.09em;
+  font-size: 1.12em;
+}
+
+.TechSummaryPage__Introduction,
 .TechSummaryPage__Introduction__StatBars {
   flex-basis: 50%;
 }
@@ -14,6 +20,7 @@
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
+  letter-spacing: 0.05em;
 }
 
 .TechSummary__Projects__Wrapper {
@@ -25,6 +32,7 @@
   padding: 25px;
   position: relative;
   width: 25%;
+  letter-spacing: 0.05em;
 }
 
 .Project--hidden {

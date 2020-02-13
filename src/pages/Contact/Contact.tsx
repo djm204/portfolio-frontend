@@ -19,7 +19,6 @@ const Contact: FunctionComponent = () => {
           <input
             onChange={handleInputChange}
             value={inputs.name}
-            type="text"
             name="name"
             placeholder="*Name"
             required

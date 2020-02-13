@@ -7,6 +7,6 @@
 }
 
 .EggBert:hover {
-  color: green;
+  color: rgba(255, 211, 0, 0.9);
   cursor: pointer;
 }

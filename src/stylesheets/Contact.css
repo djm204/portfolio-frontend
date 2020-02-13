@@ -4,6 +4,11 @@
   align-items: center;
   background-color: rgba(126, 165, 255, 0.4);
   padding: 50px 0;
+  letter-spacing: 0.05em;
+}
+
+.Contact h2 {
+  padding-bottom: 20px;
 }
 
 .Contact__Form {

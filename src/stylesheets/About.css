@@ -10,10 +10,26 @@
 
 .Bio__Image {
   text-align: center;
-  flex-basis: 25%;
+  flex-basis: 50%;
 }
 
 .Bio__Image .Bio__Image__Picture img {
   border-radius: 30em;
   width: 300px;
+  margin-bottom: 20px;
+}
+
+.WriteUp {
+  letter-spacing: 0.09em;
+  font-size: 1.12em;
+}
+
+blockquote {
+  border-top-left-radius: 10px;
+  border-left: 5px solid rgba(172, 197, 255, 0.4);
+  padding-left: 10px;
+  font-style: italic;
+  font-size: 1.05em;
+  letter-spacing: 0.05em;
+  padding: 5px 0px 5px 10px;
 }
