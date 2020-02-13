@@ -5,6 +5,7 @@ type InputsType = {
   email: string
   phone: string
   message: string
+  errors: object
 }
 
 const initialState: InputsType = {
@@ -12,6 +13,7 @@ const initialState: InputsType = {
   email: '',
   phone: '',
   message: '',
+  errors: {},
 }
 
 const useContactForm = (callback: Function) => {
@@ -29,6 +31,8 @@ const useContactForm = (callback: Function) => {
     event.persist()
     setInputs(inputs => ({ ...inputs, [event.target.name]: event.target.value }))
   }
+
+  const validate = (inputs: InputsType) => {}
 
   return {
     handleSubmit,

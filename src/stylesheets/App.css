@@ -6,8 +6,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   background-color: lightgray;
   padding: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   border-left: 2px solid gray;
 }
 
@@ -70,10 +68,4 @@ code::before {
   background-color: rgba(126, 165, 255, 0.4);
   clip-path: polygon(0 -4px, 100% 0px, 100% 100%, 0px 63.31%);
   height: 138px;
-}
-
-@keyframes popDown {
-  0% {
-    transform: translateY(-100px);
-  }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import cnames from 'classnames'
+import '../../stylesheets/Project.css'
 
 type ProjectProps = {
   name: string

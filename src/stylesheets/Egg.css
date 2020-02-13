@@ -10,3 +10,30 @@
   color: rgba(255, 211, 0, 0.9);
   cursor: pointer;
 }
+
+.Egg--1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 49%;
+  top: 200px;
+  background: url('https://davidmendez.dev/david_on_a_mountain.jpg');
+  animation: popDown 1s ease forwards;
+}
+
+.Egg--2 {
+}
+
+.Egg--3 {
+}
+
+.Egg--4 {
+}
+
+.Egg__Hide {
+  display: none;
+}
+
+.Egg__Show {
+  display: inline-block;
+}

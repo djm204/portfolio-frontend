@@ -5,10 +5,13 @@
   background-color: rgba(126, 165, 255, 0.4);
   padding: 50px 0;
   letter-spacing: 0.05em;
+  padding-right: 20px;
 }
 
 .Contact h2 {
   padding-bottom: 20px;
+  text-align: center;
+  width: 100%\;;
 }
 
 .Contact__Form {
@@ -17,8 +20,23 @@
 }
 
 .Contact__Form input,
-.Contact__Form textarea {
+.Contact__Form textarea,
+.Contact__Form button {
   margin-bottom: 10px;
+  background: rgba(219, 230, 255, 1);
+  border: 1px solid rgba(126, 165, 255, 0.5);
+  padding: 15px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+button {
+  cursor: pointer;
+}
+
+.Contact__Form button:hover {
+  background-color: rgba(126, 165, 255, 0.6);
+  color: rgba(219, 230, 255, 1);
 }
 
 .Contact__Form__Wrapper {

@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import useContactForm from '../../hooks/customHooks'
 import '../../stylesheets/Contact.css'
+import InputField from '../../components/InputField'
 
 const Contact: FunctionComponent = () => {
   const onSubmitCompleted = () => {
@@ -13,26 +14,27 @@ const Contact: FunctionComponent = () => {
 
   return (
     <div id="Contact" className="Contact">
-      <h2>Contact Me</h2>
       <div className="Contact__Form__Wrapper">
+        <h2>Contact Me</h2>
         <form className="Contact__Form" onSubmit={handleSubmit}>
-          <input
-            onChange={handleInputChange}
+          <InputField
+            onChangeHandler={handleInputChange}
             value={inputs.name}
             name="name"
+            type="text"
             placeholder="*Name"
             required
           />
-          <input
-            onChange={handleInputChange}
+          <InputField
+            onChangeHandler={handleInputChange}
             value={inputs.email}
             type="email"
             placeholder="*Enter email"
             name="email"
             required
           />
-          <input
-            onChange={handleInputChange}
+          <InputField
+            onChangeHandler={handleInputChange}
             value={inputs.phone}
             type="tel"
             placeholder="Phone (optional)"
@@ -45,7 +47,9 @@ const Contact: FunctionComponent = () => {
             required
             value={inputs.message}
           ></textarea>
-          <input className="btn btn-primary" type="submit" value="Submit" />
+          <button className="btn btn-primary" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>

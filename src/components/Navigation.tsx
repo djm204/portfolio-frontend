@@ -4,6 +4,8 @@ import cnames from 'classnames'
 import '../stylesheets/Egg.css'
 import '../stylesheets/Navigation.css'
 
+import Egg from './Egg'
+
 const Navigation = () => {
   const [fixedNav, setFixedNav] = useState()
   const [isMobile, setIsMobile] = useState()
@@ -71,10 +73,8 @@ const Navigation = () => {
           <a onClick={goToSection} href="/contact" data-goto="Contact">
             Contact
           </a>
-          <div className="EggBert">
-            <FontAwesomeIcon icon={'egg'} />
-          </div>
         </div>
+        <Egg />
       </nav>
     </React.Fragment>
   )

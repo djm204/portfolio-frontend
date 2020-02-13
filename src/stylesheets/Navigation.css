@@ -38,6 +38,11 @@
   width: 100%;
 }
 
+.Nav.Nav__Mobile a {
+  padding: 15px 15px;
+  border-bottom: 1px solid rgba(172, 197, 255, 0.5);
+}
+
 .Nav.Nav__Mobile .EggBert {
   width: 100%;
 }
