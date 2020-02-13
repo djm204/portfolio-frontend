@@ -4,7 +4,7 @@ export const projects = [
     name: 'Cashier',
     role: 'Developer Team Lead / Full Stack Developer',
     link: 'NPA',
-    imgSrc: 'staples.png',
+    imgSrc: 'cashier.png',
     points: [
       'Pair programming / mentoring & unblocking reports.',
       'Delegation and prioritization of tasks.',
