@@ -46,7 +46,13 @@ const TechSummary = () => {
           <small>* Percentages represent level of confidence in respective technologies</small>
         </div>
       </InfoSection>
-      <HorizontalSeparator classnames={['lighter', 'right-to-left']} />
+      <HorizontalSeparator
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        classnames={['lighter', 'right-to-left']}
+      />
       <InfoSection id="Projects" classnames="TechSummaryPage__Projects">
         <h2>Projects</h2>
         <div className="TechSummary__Projects__Wrapper">

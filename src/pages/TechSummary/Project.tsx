@@ -15,39 +15,7 @@ type ProjectProps = {
 }
 
 const Project = (props: ProjectProps) => {
-  const {
-    role,
-    name,
-    link,
-    points,
-    className,
-    imgSrc,
-    dataAos,
-    dataAosDuration,
-    dataAosEasing,
-    dataAosOnce,
-  } = props
-  const showElements = () => {
-    const container = document.querySelector(`#${className}`)
-    const backgroundImage = container?.querySelector('.Project__Image')
-    let hiddenElements = [].slice.call(container?.querySelectorAll('.Project--hidden'))
-
-    hiddenElements.forEach((element: Element) => element.classList.remove('Project--hidden'))
-    hiddenElements.forEach((element: Element) => element.classList.add('Project--SlideIn'))
-    backgroundImage?.classList.remove('Project--visible')
-    backgroundImage?.classList.add('Project--hidden')
-  }
-
-  const hideElements = () => {
-    const container = document.querySelector(`#${className}`)
-    const backgroundImage = container?.querySelector('.Project__Image')
-    let visibleElements = [].slice.call(container?.querySelectorAll('.Project--SlideIn'))
-
-    visibleElements.forEach((element: Element) => element.classList.add('Project--hidden'))
-    visibleElements.forEach((element: Element) => element.classList.remove('Project--SlideIn'))
-    backgroundImage?.classList.remove('Project--hidden')
-    backgroundImage?.classList.add('Project--visible')
-  }
+  const { role, name, link, points, className, imgSrc, dataAosDuration, dataAosEasing } = props
   return (
     <div id={className} className={cnames('Project', className)}>
       <img className="Project__Image" alt={name} src={imgSrc} />

@@ -43,7 +43,13 @@ const App = () => {
       <Header />
       <Navigation />
       <About />
-      <HorizontalSeparator classnames={['lighter', 'left-to-right']} />
+      <HorizontalSeparator
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        classnames={['lighter', 'left-to-right']}
+      />
       <TechSummary />
       <HorizontalSeparator classnames={['darker', 'left-to-right']} />
       <Contact />
