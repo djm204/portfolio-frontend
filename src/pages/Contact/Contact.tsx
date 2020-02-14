@@ -10,7 +10,6 @@ const Contact: FunctionComponent = () => {
 
   const { inputs, inputErrors, handleInputChange, handleSubmit } = useContactForm(onSubmitCompleted)
 
-  console.log(inputErrors)
   return (
     <div id="Contact" className="Contact">
       <div className="Contact__Form__Wrapper">

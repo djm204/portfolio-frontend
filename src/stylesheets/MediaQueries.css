@@ -52,4 +52,15 @@
     background-color: rgba(26, 95, 255, 1);
     border: 1px solid rgb(0, 34, 111);
   }
+
+  .Contact__Form__Wrapper {
+    width: 100%;
+  }
+  .Contact {
+    padding: 10px;
+  }
+
+  .Bio__Image {
+    padding-right: 0px;
+  }
 }

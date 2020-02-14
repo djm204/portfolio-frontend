@@ -36,11 +36,9 @@ const useContactForm = (callback: Function) => {
 
     if (event) event.preventDefault()
 
-    if (validate(inputs as InputsType)) {
-      post(request)
-        .then(data => callback(data))
-        .catch(err => alert(err))
-    }
+    post(request)
+      .then(data => callback(data))
+      .catch(err => alert(err))
   }
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
