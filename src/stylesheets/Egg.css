@@ -12,26 +12,67 @@
 }
 
 .Egg--1 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 49%;
-  top: 200px;
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  left: -500px;
+  top: 10%;
   background: url('https://davidmendez.dev/david_on_a_mountain.jpg');
-  animation: popDown 1s ease forwards;
+  background-size: cover;
+  transition: all 3s ease-in-out;
+}
+
+.Egg--1.Egg__Show {
+  left: 0px;
 }
 
 .Egg--2 {
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  left: -500px;
+  top: 40%;
+  background: url('https://davidmendez.dev/david_on_a_mountain.jpg');
+  background-size: cover;
+  transition: all 3s ease-in-out;
+}
+
+.Egg--2.Egg__Show {
+  left: 0px;
 }
 
 .Egg--3 {
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  right: -500px;
+  top: 40%;
+  background: url('https://davidmendez.dev/david_on_a_mountain.jpg');
+  background-size: cover;
+  transition: all 3s ease-in-out;
+}
+
+.Egg--3.Egg__Show {
+  right: 0px;
 }
 
 .Egg--4 {
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  right: -500px;
+  top: 10%;
+  background: url('https://davidmendez.dev/david_on_a_mountain.jpg');
+  background-size: cover;
+  transition: all 3s ease-in-out;
+}
+
+.Egg--4.Egg__Show {
+  right: 0px;
 }
 
 .Egg__Hide {
-  display: none;
+  display: inline-block;
 }
 
 .Egg__Show {

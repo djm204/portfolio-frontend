@@ -25,7 +25,6 @@ const Egg = () => {
 
       setEggClicks(0)
     }
-    console.log(eggClicks)
   }
 
   const selectEggClassAtRandom = (eggCount: number): string => {
