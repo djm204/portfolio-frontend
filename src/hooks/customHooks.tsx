@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { post } from '../helpers/api'
 
 type InputsType = {
   name: string
@@ -6,6 +7,12 @@ type InputsType = {
   phone: string
   message: string
   errors: object
+  [propName: string]: any
+}
+type InputErrors = {
+  type: string
+  message: string
+  field: string
 }
 
 const initialState: InputsType = {
@@ -16,15 +23,24 @@ const initialState: InputsType = {
   errors: {},
 }
 
+const initialErrors: Array<InputErrors> = []
+
 const useContactForm = (callback: Function) => {
   const [inputs, setInputs] = useState(initialState)
+  const [inputErrors, setInputErrors] = useState(initialErrors)
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
-    if (event) {
-      event.preventDefault()
-    }
+    let requestData = inputs
+    delete requestData.errors
+    const request = { url: '/api/sendContactForm', payload: { ...requestData } }
 
-    callback()
+    if (event) event.preventDefault()
+
+    if (validate(inputs as InputsType)) {
+      post(request)
+        .then(data => callback(data))
+        .catch(err => alert(err))
+    }
   }
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -32,12 +48,27 @@ const useContactForm = (callback: Function) => {
     setInputs(inputs => ({ ...inputs, [event.target.name]: event.target.value }))
   }
 
-  const validate = (inputs: InputsType) => {}
+  const validate = (inputs: InputsType): boolean => {
+    const requiredInputs = ['name', 'email', 'message']
+
+    requiredInputs.forEach(input => {
+      if (!inputs[input]) {
+        inputErrors.push({
+          type: 'validation',
+          message: input + 'cannot be blank!',
+          field: input,
+        })
+        setInputErrors(inputErrors)
+      }
+    })
+    return true
+  }
 
   return {
     handleSubmit,
     handleInputChange,
     inputs,
+    inputErrors,
   }
 }
 

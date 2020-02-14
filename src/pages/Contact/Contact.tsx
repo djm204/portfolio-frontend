@@ -4,18 +4,18 @@ import '../../stylesheets/Contact.css'
 import InputField from '../../components/InputField'
 
 const Contact: FunctionComponent = () => {
-  const onSubmitCompleted = () => {
-    alert(`No Backend Yet!
-         Name: ${inputs.name}
-         Email: ${inputs.email}`)
+  const onSubmitCompleted = (data: object) => {
+    alert(`Successful Submit!`)
   }
 
-  const { inputs, handleInputChange, handleSubmit } = useContactForm(onSubmitCompleted)
+  const { inputs, inputErrors, handleInputChange, handleSubmit } = useContactForm(onSubmitCompleted)
 
+  console.log(inputErrors)
   return (
     <div id="Contact" className="Contact">
       <div className="Contact__Form__Wrapper">
         <h2>Contact Me</h2>
+        <h4>Do you want to work together?</h4>
         <form className="Contact__Form" onSubmit={handleSubmit}>
           <InputField
             onChangeHandler={handleInputChange}

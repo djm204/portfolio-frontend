@@ -8,10 +8,14 @@
   padding-right: 20px;
 }
 
-.Contact h2 {
-  padding-bottom: 20px;
+.Contact h2,
+.Contact h4 {
   text-align: center;
   width: 100%\;;
+}
+
+.Contact h4 {
+  padding-bottom: 20px;
 }
 
 .Contact__Form {
@@ -27,18 +31,20 @@
   border: 1px solid rgba(126, 165, 255, 0.5);
   padding: 15px;
   font-size: 16px;
+  line-height: 20px;
   letter-spacing: 0.05em;
 }
 
-button {
+.Contact__Form button {
   cursor: pointer;
+  background-color: rgba(126, 165, 255, 0.6);
 }
 
 .Contact__Form button:hover {
-  background-color: rgba(126, 165, 255, 0.6);
-  color: rgba(219, 230, 255, 1);
+  background-color: rgb(146, 178, 253);
+  color: rgb(82, 108, 168);
 }
 
 .Contact__Form__Wrapper {
-  width: 360px;
+  width: 460px;
 }

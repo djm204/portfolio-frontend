@@ -15,6 +15,10 @@ export async function get<T>(request: globalTypes.ApiRequest): Promise<T> {
 export async function post<T>(request: globalTypes.ApiRequest): Promise<T> {
   const payload = {
     method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
     body: JSON.stringify(request.payload),
   }
 
@@ -30,6 +34,10 @@ export async function post<T>(request: globalTypes.ApiRequest): Promise<T> {
 export async function put<T>(request: globalTypes.ApiRequest): Promise<T> {
   const payload = {
     method: 'PUT',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
     body: JSON.stringify(request.payload),
   }
 
@@ -45,6 +53,10 @@ export async function put<T>(request: globalTypes.ApiRequest): Promise<T> {
 export async function del<T>(request: globalTypes.ApiRequest): Promise<T> {
   const payload = {
     method: 'DELETE',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
     body: JSON.stringify(request.payload),
   }
 
@@ -60,6 +72,10 @@ export async function del<T>(request: globalTypes.ApiRequest): Promise<T> {
 export async function patch<T>(request: globalTypes.ApiRequest): Promise<T> {
   const payload = {
     method: 'PATCH',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
     body: JSON.stringify(request.payload),
   }
 
