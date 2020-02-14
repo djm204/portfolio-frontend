@@ -26,16 +26,13 @@ const Home: FunctionComponent = () => {
         <div className="Bio__AndQuote">
           <Bio>
             <p>
-              David is a life-long technology enthusiast with an insatiable appetite for software
-              development.
-            </p>
-            <p>
-              He spends much of his free time in front of the PC creating and furthering his
-              knowledge about different technologies such as JavaScript, GoLang and Python.
+              As a life-long technology enthusiast with an insatiable appetite for software
+              development I spend a lot of my free time in front of the PC; creating and furthering
+              my knowledge about different technologies such as JavaScript, GoLang and Python.
             </p>
             <p>
               Staying up to date with technology, code coverage and best practices are very
-              important to David.
+              important to me.
             </p>
           </Bio>
           <div className="Quote">

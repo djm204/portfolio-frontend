@@ -21,24 +21,23 @@ const TechSummary = () => {
         <div className="TechSummaryPage__Introduction">
           <h2>A Brief History</h2>
           <p>
-            David has been intrigued with Technology from a very small age. He was first introduced
-            by his parents via a IBM PS/2 486 Desktop PC.
+            Technology has had be enamoured from a very young age. I was first introduced by my
+            parents via a IBM PS/2 486 Desktop PC.
           </p>
           <p>
-            He managed to brick the Windows installation within a week, pretty sure it was{' '}
+            I managed to mess up the Windows installation within a week. Pretty darn sure I used{' '}
             <code>FORMAT C:</code>
           </p>
           <p>
-            When David's parents brought the PC to get fixed, he asked the person fixing the PC if
-            he could watch.
+            When my parents brought the PC to get fixed, I asked the person fixing the PC if I could
+            watch, he agreed.
           </p>
           <p>
-            After watching what he did to re-install Windows, David was now equipped to corrupt the
-            OS as much as he pleased as long as he reinstalled it.
+            After watching what he did to re-install Windows, I was now equipped to corrupt the OS
+            as much as I pleased as long as I reinstalled it, of course.
           </p>
           <p>
-            Little did David know that this interaction would spark a life long journey into
-            technology.
+            Little did I know that this interaction would spark a life long journey into technology.
           </p>
         </div>
         <div className="TechSummaryPage__Introduction__StatBars">
