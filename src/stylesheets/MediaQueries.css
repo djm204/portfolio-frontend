@@ -4,6 +4,14 @@
     padding-left: 0;
   }
 
+  .EggBert {
+    position: initial;
+  }
+
+  .Egg img {
+    width: 60%;
+  }
+
   .CheckMe:focus {
     background: rgba(255, 170, 0, 0.5);
   }
