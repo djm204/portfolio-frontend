@@ -1,19 +1,22 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import cnames from 'classnames'
+import Image from '../components/Image'
+import { selectEggClassAtRandom } from './componentHelpers/EggHelper'
 
 const Egg = () => {
-  const [eggClicks, setEggClicks] = useState(0)
+  const [showFriedEgg, setShowFriedEgg] = useState(false)
+  const [alreadyShown, setAlreadyShown] = useState([])
 
-  const eggCounter = () => {
-    let currentEggClicks = eggClicks
-
-    if (currentEggClicks < 5) {
-      currentEggClicks++
-      setEggClicks(currentEggClicks)
+  const showEgg = () => {
+    if (alreadyShown.length === 4) {
+      setAlreadyShown([])
     } else {
-      const eggClassToSelect = selectEggClassAtRandom(4)
-      let eggElement = document.querySelector('.' + eggClassToSelect)
+      const eggClassToSelect = selectEggClassAtRandom(alreadyShown)
+      alreadyShown.push(eggClassToSelect as never)
+      setAlreadyShown(alreadyShown)
+
+      let eggElement = document.querySelector(eggClassToSelect)
+      setShowFriedEgg(true)
 
       eggElement?.classList.remove('Egg__Hide')
       eggElement?.classList.add('Egg__Show')
@@ -21,27 +24,33 @@ const Egg = () => {
       setTimeout(() => {
         eggElement?.classList.add('Egg__Hide')
         eggElement?.classList.remove('Egg__Show')
-      }, 5000)
-
-      setEggClicks(0)
+        setShowFriedEgg(false)
+      }, 3000)
     }
   }
 
-  const selectEggClassAtRandom = (eggCount: number): string => {
-    const eggNumber = Math.floor(Math.random() * eggCount) + 1
-    return 'Egg--' + eggNumber
-  }
+  const iconClass = showFriedEgg ? 'egg-fried' : 'egg'
 
   return (
     <React.Fragment>
-      <div className="EggBert" onClick={eggCounter}>
-        <FontAwesomeIcon icon={'egg'} />
+      <div className="EggBert" onClick={showEgg}>
+        <FontAwesomeIcon icon={iconClass} />
       </div>
-      <div className="Counter"></div>
-      <div className="Egg--1 Egg__Hide"></div>
-      <div className="Egg--2 Egg__Hide"></div>
-      <div className="Egg--3 Egg__Hide"></div>
-      <div className="Egg--4 Egg__Hide"></div>
+      <div className="Egg--1 Egg__Hide">
+        <Image
+          imgUrl="https://davidmendez.dev/i_love_to_festival.jpg"
+          altText="I love to festival"
+        />
+      </div>
+      <div className="Egg--2 Egg__Hide">
+        <Image imgUrl="https://davidmendez.dev/i_love_to_garden.jpg" altText="I love to garden" />
+      </div>
+      <div className="Egg--3 Egg__Hide">
+        <Image imgUrl="https://davidmendez.dev/i_love_my_cats.jpg" altText="I love my cats" />
+      </div>
+      <div className="Egg--4 Egg__Hide">
+        <Image imgUrl="https://davidmendez.dev/me_and_my_love.jpg" altText="My love and I" />
+      </div>
     </React.Fragment>
   )
 }

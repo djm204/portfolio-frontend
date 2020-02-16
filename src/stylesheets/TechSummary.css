@@ -8,6 +8,10 @@
   flex-basis: 50%;
 }
 
+.TechSummaryPage__Introduction__StatBars {
+  padding-left: 20px;
+}
+
 .TechSummaryPage__InfoSection {
   background-color: rgba(172, 197, 255, 0.4);
 }

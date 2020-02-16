@@ -7,7 +7,6 @@ const Header = () => {
     <header className="App__Header">
       <div className="Swoosh--1"></div>
       <div className="Swoosh--2"></div>
-      <div className="Swoosh--3"></div>
       <Hero />
     </header>
   )

@@ -12,12 +12,9 @@
 }
 
 .Egg--1 {
-  width: 500px;
-  height: 400px;
   position: fixed;
   left: -500px;
   top: 10%;
-  background: url('https://davidmendez.dev/david_on_a_mountain.jpg');
   background-size: cover;
   transition: all 3s ease-in-out;
 }
@@ -32,7 +29,6 @@
   position: fixed;
   left: -500px;
   top: 40%;
-  background: url('https://davidmendez.dev/david_on_a_mountain.jpg');
   background-size: cover;
   transition: all 3s ease-in-out;
 }
@@ -47,7 +43,6 @@
   position: fixed;
   right: -500px;
   top: 40%;
-  background: url('https://davidmendez.dev/david_on_a_mountain.jpg');
   background-size: cover;
   transition: all 3s ease-in-out;
 }
@@ -62,7 +57,6 @@
   position: fixed;
   right: -500px;
   top: 10%;
-  background: url('https://davidmendez.dev/david_on_a_mountain.jpg');
   background-size: cover;
   transition: all 3s ease-in-out;
 }

@@ -15,12 +15,14 @@ import {
   faTwitterSquare,
   faLinkedin,
   faGithubSquare,
+  faGitlab,
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faArrowAltDown,
   faEnvelopeSquare,
   faChevronRight,
   faEgg,
+  faEggFried,
   faBars,
 } from '@fortawesome/pro-solid-svg-icons'
 
@@ -30,13 +32,15 @@ library.add(
   faBars,
   faArrowAltDown,
   faEgg,
+  faEggFried,
   faChevronRight,
   faFacebookSquare,
   faInstagramSquare,
   faTwitterSquare,
   faLinkedin,
   faGithubSquare,
-  faEnvelopeSquare
+  faEnvelopeSquare,
+  faGitlab
 )
 
 const App = () => {

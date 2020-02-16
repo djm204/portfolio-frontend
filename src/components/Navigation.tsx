@@ -73,8 +73,8 @@ const Navigation = () => {
           <a onClick={goToSection} href="/contact" data-goto="Contact">
             Contact
           </a>
+          <Egg />
         </div>
-        <Egg />
       </nav>
     </React.Fragment>
   )

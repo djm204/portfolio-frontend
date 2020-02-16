@@ -30,7 +30,8 @@
   font-size: 1.12em;
 }
 
-blockquote {
+.Quote {
+  margin-top: 50px;
   border-top-left-radius: 10px;
   border-left: 5px solid rgba(172, 197, 255, 0.4);
   padding-left: 10px;

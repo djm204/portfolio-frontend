@@ -1,7 +1,6 @@
 @media screen and (max-width: 800px) {
   .App__Header__Title {
-    top: 20%;
-    font-size: 2em;
+    font-size: 1.7em;
     padding-left: 0;
   }
 
@@ -22,7 +21,12 @@
 
   .Bio__Image {
     margin-bottom: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid rgba(172, 197, 255, 0.5);
+  }
+
+  .Bio__AndQuote {
+    padding-top: 20px;
   }
 
   .TechSummary__Projects__Wrapper {
