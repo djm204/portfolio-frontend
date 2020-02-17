@@ -1,33 +1,32 @@
 import React, { useState } from 'react'
+import { InputErrorsType, InputsType, validate } from '../helpers/formValidation'
 import { post } from '../helpers/api'
-
-type InputsType = {
-  name: string
-  email: string
-  phone: string
-  message: string
-  errors: object
-  [propName: string]: any
-}
-type InputErrors = {
-  type: string
-  message: string
-  field: string
-}
 
 const initialState: InputsType = {
   name: '',
   email: '',
   phone: '',
   message: '',
-  errors: {},
+  errors: [],
 }
 
-const initialErrors: Array<InputErrors> = []
+const initialErrors: Array<InputErrorsType> = []
 
-const useContactForm = (callback: Function) => {
+const initialResponseMessage = {
+  type: '',
+  message: '',
+  success: false,
+}
+
+const useContactForm = (successCallback: Function) => {
   const [inputs, setInputs] = useState(initialState)
   const [inputErrors, setInputErrors] = useState(initialErrors)
+  const [submitting, setSubmitting] = useState(false)
+  const [responseMessage, setResponseMessage] = useState(initialResponseMessage)
+
+  const clearInputError = (field: string) => {
+    setInputErrors(inputErrors.filter(inputError => inputError.field !== field))
+  }
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     let requestData = inputs
@@ -35,38 +34,34 @@ const useContactForm = (callback: Function) => {
     const request = { url: '/api/sendContactForm', payload: { ...requestData } }
 
     if (event) event.preventDefault()
+    setSubmitting(true)
 
-    post(request)
-      .then(data => callback(data))
-      .catch(err => alert(err))
+    const errors = validate(inputs)
+
+    if (errors.length === 0) {
+      post(request)
+        .then(data => setResponseMessage(data as any))
+        .catch(err => setResponseMessage(err))
+      setSubmitting(false)
+    } else {
+      setInputErrors(errors)
+      setSubmitting(false)
+    }
   }
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     event.persist()
+    clearInputError(event.target.name)
     setInputs(inputs => ({ ...inputs, [event.target.name]: event.target.value }))
-  }
-
-  const validate = (inputs: InputsType): boolean => {
-    const requiredInputs = ['name', 'email', 'message']
-
-    requiredInputs.forEach(input => {
-      if (!inputs[input]) {
-        inputErrors.push({
-          type: 'validation',
-          message: input + 'cannot be blank!',
-          field: input,
-        })
-        setInputErrors(inputErrors)
-      }
-    })
-    return true
   }
 
   return {
     handleSubmit,
     handleInputChange,
     inputs,
+    responseMessage,
     inputErrors,
+    submitting,
   }
 }
 

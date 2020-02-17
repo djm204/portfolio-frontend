@@ -18,15 +18,14 @@
   padding-bottom: 20px;
 }
 
-.Contact__Form {
+.ContactForm {
   display: flex;
   flex-direction: column;
 }
 
-.Contact__Form input,
-.Contact__Form textarea,
-.Contact__Form button {
-  margin-bottom: 10px;
+.ContactForm input,
+.ContactForm textarea,
+.ContactForm button {
   background: rgba(219, 230, 255, 1);
   border: 1px solid rgba(126, 165, 255, 0.5);
   padding: 15px;
@@ -35,16 +34,39 @@
   letter-spacing: 0.05em;
 }
 
-.Contact__Form button {
+.ContactForm button {
   cursor: pointer;
   background-color: rgba(126, 165, 255, 0.6);
 }
 
-.Contact__Form button:hover {
+.ContactForm button:hover {
   background-color: rgb(146, 178, 253);
   color: rgb(82, 108, 168);
 }
 
-.Contact__Form__Wrapper {
+.ContactForm__Wrapper {
   width: 460px;
+}
+
+.ContactForm .ErrorMessage {
+  color: rgb(248, 74, 74);
+  margin-bottom: 5px;
+  display: flex;
+  align-items: baseline;
+  padding: 3px;
+}
+
+.ContactForm .ErrorMessage svg {
+  margin-right: 10px;
+}
+
+.ContactForm input.hasError,
+.ContactForm textarea.hasError {
+  border: solid 1px rgb(248, 74, 74);
+  background: rgb(247, 198, 198, 0.2);
+}
+
+.spinner {
+  animation: rotate 1s linear infinite;
+  color: rgba(0, 34, 111, 1);
 }

@@ -1,36 +1,46 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useEffect } from 'react'
 import useContactForm from '../../hooks/customHooks'
 import '../../stylesheets/Contact.css'
 import InputField from '../../components/InputField'
+import TextAreaField from '../../components/TextAreaField'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Contact: FunctionComponent = () => {
   const onSubmitCompleted = (data: object) => {
-    alert(`Successful Submit!`)
+    console.info(`Successful Submit!`)
   }
 
-  const { inputs, inputErrors, handleInputChange, handleSubmit } = useContactForm(onSubmitCompleted)
+  const {
+    inputs,
+    inputErrors,
+    handleInputChange,
+    handleSubmit,
+    responseMessage,
+    submitting,
+  } = useContactForm(onSubmitCompleted)
 
+  console.log('render', inputErrors.length)
   return (
     <div id="Contact" className="Contact">
-      <div className="Contact__Form__Wrapper">
+      <div className="ContactForm__Wrapper">
         <h2>Contact Me</h2>
         <h4>Do you want to work together?</h4>
-        <form className="Contact__Form" onSubmit={handleSubmit}>
+        <form className="ContactForm" onSubmit={handleSubmit}>
           <InputField
             onChangeHandler={handleInputChange}
             value={inputs.name}
             name="name"
             type="text"
-            placeholder="*Name"
-            required
+            placeholder="* Name"
+            error={inputErrors.filter(inputError => inputError.field === 'name')[0]}
           />
           <InputField
             onChangeHandler={handleInputChange}
             value={inputs.email}
             type="email"
-            placeholder="*Enter email"
+            placeholder="* Enter email"
             name="email"
-            required
+            error={inputErrors.filter(inputError => inputError.field === 'email')[0]}
           />
           <InputField
             onChangeHandler={handleInputChange}
@@ -39,16 +49,23 @@ const Contact: FunctionComponent = () => {
             placeholder="Phone (optional)"
             name="phone"
           />
-          <textarea
-            onChange={handleInputChange}
-            name="message"
-            placeholder="*I'd love to hear from you!"
-            required
+          <TextAreaField
+            onChangeHandler={handleInputChange}
             value={inputs.message}
-          ></textarea>
-          <button className="btn btn-primary" type="submit">
-            Submit
+            placeholder="* I'd love to hear from you!"
+            name="message"
+            error={inputErrors.filter(inputError => inputError.field === 'message')[0]}
+          />
+          <button type="submit" disabled={inputErrors.length > 0}>
+            {submitting ? (
+              <div className="spinner">
+                <FontAwesomeIcon icon={'spinner'} />
+              </div>
+            ) : (
+              'Submit'
+            )}
           </button>
+          <div className="ContactForm__SuccessMessage">{responseMessage.message}</div>
         </form>
       </div>
     </div>
