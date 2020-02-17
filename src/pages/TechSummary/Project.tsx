@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cnames from 'classnames'
 import '../../stylesheets/Project.css'
 
@@ -16,11 +16,30 @@ type ProjectProps = {
 }
 
 const Project = (props: ProjectProps) => {
+  const [isExpanded, setIsExpanded] = useState(false)
   const { role, name, link, points, className, imgSrc, dataAosDuration, dataAosEasing } = props
+
+  const handleClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
+    if (event) event.persist()
+    setIsExpanded(!isExpanded)
+  }
+
   return (
     <div id={className} className={cnames('Project', className)}>
-      <img className="Project__Image" alt={name} src={imgSrc} />
-      <div className="Project__Details">
+      <div
+        className={cnames('ExpandedProjectImageBackground', { '--expanded': isExpanded })}
+        onClick={handleClick}
+      >
+        <div className={cnames('Project__Image__Wrapper', { '--expanded': isExpanded })}>
+          <img
+            className={cnames('Project__Image', { '--expanded': isExpanded })}
+            alt={name}
+            src={imgSrc}
+          />
+        </div>
+      </div>
+
+      <div className={cnames('Project__Details', { '--expanded': isExpanded })}>
         <h3
           className="Project__Name "
           data-aos-duration={dataAosDuration}
