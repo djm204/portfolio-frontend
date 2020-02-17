@@ -19,7 +19,6 @@ const Contact: FunctionComponent = () => {
     submitting,
   } = useContactForm(onSubmitCompleted)
 
-  console.log('render', inputErrors.length)
   return (
     <div id="Contact" className="Contact">
       <div className="ContactForm__Wrapper">
@@ -37,7 +36,7 @@ const Contact: FunctionComponent = () => {
           <InputField
             onChangeHandler={handleInputChange}
             value={inputs.email}
-            type="email"
+            type="text"
             placeholder="* Enter email"
             name="email"
             error={inputErrors.filter(inputError => inputError.field === 'email')[0]}

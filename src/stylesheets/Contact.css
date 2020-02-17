@@ -54,6 +54,7 @@
   display: flex;
   align-items: baseline;
   padding: 3px;
+  height: 28.5px;
 }
 
 .ContactForm .ErrorMessage svg {
