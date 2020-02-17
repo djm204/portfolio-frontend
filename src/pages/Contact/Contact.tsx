@@ -4,12 +4,10 @@ import '../../stylesheets/Contact.css'
 import InputField from '../../components/InputField'
 import TextAreaField from '../../components/TextAreaField'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import cnames from 'classnames'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
 const Contact: FunctionComponent = () => {
-  const onSubmitCompleted = (data: object) => {
-    console.info(`Successful Submit!`)
-  }
-
   const {
     inputs,
     inputErrors,
@@ -17,7 +15,19 @@ const Contact: FunctionComponent = () => {
     handleSubmit,
     responseMessage,
     submitting,
-  } = useContactForm(onSubmitCompleted)
+  } = useContactForm()
+
+  const successMessageIconClass = () => {
+    if (!responseMessage.success && responseMessage.message !== '') {
+      return 'times-circle'
+    }
+
+    if (responseMessage.success) {
+      return 'check-circle'
+    }
+
+    return ''
+  }
 
   return (
     <div id="Contact" className="Contact">
@@ -64,7 +74,20 @@ const Contact: FunctionComponent = () => {
               'Submit'
             )}
           </button>
-          <div className="ContactForm__SuccessMessage">{responseMessage.message}</div>
+          <div
+            className={cnames(
+              'ContactForm__SuccessMessage',
+              {
+                '--successful': responseMessage.success,
+              },
+              {
+                '--failed': !responseMessage.success,
+              }
+            )}
+          >
+            <FontAwesomeIcon icon={successMessageIconClass() as IconProp} />
+            {responseMessage.message}
+          </div>
         </form>
       </div>
     </div>

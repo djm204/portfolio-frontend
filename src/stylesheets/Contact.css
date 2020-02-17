@@ -57,7 +57,7 @@
   height: 28.5px;
 }
 
-.ContactForm .ErrorMessage svg {
+.ContactForm svg {
   margin-right: 10px;
 }
 
@@ -70,4 +70,18 @@
 .spinner {
   animation: rotate 1s linear infinite;
   color: rgba(0, 34, 111, 1);
+}
+
+.ContactForm__SuccessMessage {
+  font-size: 0.9em;
+  padding-top: 10px;
+  height: 30.25px;
+}
+
+.ContactForm__SuccessMessage.--successful {
+  color: rgb(75, 181, 67);
+}
+
+.ContactForm__SuccessMessage.--failed {
+  color: rgb(248, 74, 74);
 }

@@ -14,7 +14,6 @@ type TextAreaFieldProps = {
 
 const TextAreaField = (props: TextAreaFieldProps) => {
   const { onChangeHandler, value, name, placeholder, error } = props
-  console.log(error)
   return (
     <React.Fragment>
       <textarea

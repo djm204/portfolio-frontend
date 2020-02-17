@@ -26,6 +26,7 @@ import {
   faBars,
   faTimesCircle,
   faSpinner,
+  faCheckCircle,
 } from '@fortawesome/pro-solid-svg-icons'
 
 AOS.init()
@@ -44,7 +45,8 @@ library.add(
   faGithubSquare,
   faEnvelopeSquare,
   faGitlab,
-  faSpinner
+  faSpinner,
+  faCheckCircle
 )
 
 const App = () => {

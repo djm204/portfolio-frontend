@@ -15,10 +15,10 @@ const initialErrors: Array<InputErrorsType> = []
 const initialResponseMessage = {
   type: '',
   message: '',
-  success: false,
+  success: null,
 }
 
-const useContactForm = (successCallback: Function) => {
+const useContactForm = () => {
   const [inputs, setInputs] = useState(initialState)
   const [inputErrors, setInputErrors] = useState(initialErrors)
   const [submitting, setSubmitting] = useState(false)
@@ -40,8 +40,18 @@ const useContactForm = (successCallback: Function) => {
 
     if (errors.length === 0) {
       post(request)
-        .then(data => setResponseMessage(data as any))
-        .catch(err => setResponseMessage(err))
+        .then(data => {
+          setResponseMessage(data as any)
+          setTimeout(() => {
+            setResponseMessage(initialResponseMessage)
+          }, 3000)
+        })
+        .catch(err => {
+          setResponseMessage(err)
+          setTimeout(() => {
+            setResponseMessage(initialResponseMessage)
+          }, 3000)
+        })
       setSubmitting(false)
     } else {
       setInputErrors(errors)
