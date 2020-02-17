@@ -26,9 +26,7 @@ export const validate = (inputs: InputsType): Array<InputErrorsType> => {
         message: input + ' cannot be blank!',
         field: input,
       })
-    }
-
-    if (!EMAIL_REGEX.test(inputs.email)) {
+    } else if (!EMAIL_REGEX.test(inputs.email)) {
       inputErrors.push({
         type: 'validation',
         message: 'Please enter a valid email',
