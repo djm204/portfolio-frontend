@@ -22,20 +22,21 @@ const TechSummary = () => {
           <h2>A Brief History</h2>
           <p>
             Technology has had me enamoured from a very young age. When I had a remote control car,
-            I didn't just play with it, I took it a part to see what made the insides work. As you
+            I didn't just play with it, I took it apart to see what made the insides work. As you
             would imagine it didn't end well for young David.
           </p>
           <p>
-            I was first introduced by my parents via a IBM PS/2 486 Desktop PC.I managed to mess up
-            the Windows installation within a week. Pretty darn sure I used <code>FORMAT C:</code>
+            I was first introduced by my parents via an IBM PS/2 486 Desktop PC. I managed to mess
+            up the Windows installation within a week. Pretty darn sure I used{' '}
+            <code>FORMAT C:</code>
           </p>
           <p>
             When my parents brought the PC to get fixed, I asked the person fixing the PC if I could
-            watch, he agreed.
+            watch.
           </p>
           <p>
-            After watching what he did to re-install Windows, I was now equipped to corrupt the OS
-            as much as I pleased as long as I reinstalled it, of course.
+            After watching what he did to re-install Windows, I was now equipped to experiment with
+            the OS as much as I pleased as long as I reinstalled it, of course.
           </p>
           <p>
             Little did I know that this interaction would spark a life long journey into technology.

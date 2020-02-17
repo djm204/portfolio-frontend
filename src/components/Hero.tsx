@@ -16,7 +16,7 @@ const Hero = () => {
     <React.Fragment>
       <div className="App__Header__Title">
         <p>
-          Hello, I'm <span className="App__Header__Title__Name">David Mendez.</span>
+          Hello, I'm <span className="App__Header__Title__Name">David Mendez,</span>
         </p>
         <p>a full-stack Web Developer.</p>
         <div className="CheckMe" onClick={goToBio}>

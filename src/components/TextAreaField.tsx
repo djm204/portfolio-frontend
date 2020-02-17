@@ -14,10 +14,11 @@ type TextAreaFieldProps = {
 
 const TextAreaField = (props: TextAreaFieldProps) => {
   const { onChangeHandler, value, name, placeholder, error } = props
+  console.log(error)
   return (
     <React.Fragment>
       <textarea
-        className={cnames('TextAreaField', { hasError: error !== null })}
+        className={cnames('TextAreaField', { hasError: error != null })}
         onChange={onChangeHandler}
         name={name}
         placeholder={placeholder}
