@@ -78,6 +78,10 @@
   transform: scaleY(1);
 }
 
+.Project__Image__Wrapper__Expanded {
+  width: 90%;
+}
+
 .Project__Image__Expanded {
   padding: 0;
   margin: 0;

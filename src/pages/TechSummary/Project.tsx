@@ -9,6 +9,7 @@ type ProjectProps = {
   points: Array<string> | string
   role: string
   className: string
+  imgExpandedSrc: string
   dataAos?: string
   dataAosDuration?: string
   dataAosEasing?: string
@@ -17,7 +18,17 @@ type ProjectProps = {
 
 const Project = (props: ProjectProps) => {
   const [isExpanded, setIsExpanded] = useState(false)
-  const { role, name, link, points, className, imgSrc, dataAosDuration, dataAosEasing } = props
+  const {
+    role,
+    name,
+    link,
+    points,
+    className,
+    imgSrc,
+    dataAosDuration,
+    dataAosEasing,
+    imgExpandedSrc,
+  } = props
 
   const handleClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
     if (event) event.persist()
@@ -31,7 +42,7 @@ const Project = (props: ProjectProps) => {
         className={cnames('ExpandedProjectImageBackground', { '--expanded': isExpanded })}
       >
         <div className="Project__Image__Wrapper__Expanded">
-          <img className="Project__Image__Expanded" alt={name} src={imgSrc} />
+          <img className="Project__Image__Expanded" alt={name} src={imgExpandedSrc} />
         </div>
       </div>
       <img onClick={handleClick} className={cnames('Project__Image')} alt={name} src={imgSrc} />
