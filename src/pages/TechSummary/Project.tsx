@@ -18,10 +18,11 @@ type ProjectProps = {
 const Project = (props: ProjectProps) => {
   const [isExpanded, setIsExpanded] = useState(false)
   const { role, name, link, points, className, imgSrc, dataAosDuration, dataAosEasing } = props
+  const isMobile = window.innerWidth < 800
 
   const handleClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
     if (event) event.persist()
-    setIsExpanded(!isExpanded)
+    if (!isMobile) setIsExpanded(!isExpanded)
   }
 
   return (

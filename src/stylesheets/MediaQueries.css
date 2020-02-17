@@ -74,21 +74,4 @@
   .Bio__Image {
     padding-right: 0px;
   }
-
-  .ExpandedProjectImageBackground.--expanded {
-    position: initial;
-    z-index: 2;
-    height: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .Project__Image__Wrapper.--expanded {
-    height: 100%;
-  }
-  .Project__Image.--expanded {
-    margin-bottom: 5px;
-    padding-right: 0px;
-    width: 100%;
-  }
 }

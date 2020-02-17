@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect } from 'react'
+import React, { FunctionComponent } from 'react'
 import useContactForm from '../../hooks/customHooks'
 import '../../stylesheets/Contact.css'
 import InputField from '../../components/InputField'
