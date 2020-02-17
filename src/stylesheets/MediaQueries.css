@@ -4,6 +4,10 @@
     padding-left: 0;
   }
 
+  .ContactForm__Wrapper {
+    width: 90%;
+  }
+
   .EggBert {
     position: initial;
   }
