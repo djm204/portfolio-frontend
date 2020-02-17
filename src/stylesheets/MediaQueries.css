@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .App__Header__Title {
     font-size: 1.7em;
     padding-left: 0;
@@ -55,6 +55,7 @@
     margin-bottom: 5px;
     padding-right: 0px;
     margin-right: 0;
+    width: 100%;
   }
 
   .Project__Details {
@@ -77,5 +78,15 @@
 
   .Bio__Image {
     padding-right: 0px;
+  }
+}
+
+@media screen and (max-height: 600px) and (min-width: 568px) {
+  .Project__Image__Wrapper__Expanded {
+    height: 70%;
+  }
+
+  .Project__Image__Expanded {
+    width: 60%;
   }
 }
