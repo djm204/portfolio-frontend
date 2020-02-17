@@ -18,27 +18,23 @@ type ProjectProps = {
 const Project = (props: ProjectProps) => {
   const [isExpanded, setIsExpanded] = useState(false)
   const { role, name, link, points, className, imgSrc, dataAosDuration, dataAosEasing } = props
-  const isMobile = window.innerWidth < 800
 
   const handleClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
     if (event) event.persist()
-    if (!isMobile) setIsExpanded(!isExpanded)
+    setIsExpanded(!isExpanded)
   }
 
   return (
     <div id={className} className={cnames('Project', className)}>
       <div
-        className={cnames('ExpandedProjectImageBackground', { '--expanded': isExpanded })}
         onClick={handleClick}
+        className={cnames('ExpandedProjectImageBackground', { '--expanded': isExpanded })}
       >
-        <div className={cnames('Project__Image__Wrapper', { '--expanded': isExpanded })}>
-          <img
-            className={cnames('Project__Image', { '--expanded': isExpanded })}
-            alt={name}
-            src={imgSrc}
-          />
+        <div className="Project__Image__Wrapper__Expanded">
+          <img className="Project__Image__Expanded" alt={name} src={imgSrc} />
         </div>
       </div>
+      <img onClick={handleClick} className={cnames('Project__Image')} alt={name} src={imgSrc} />
 
       <div className={cnames('Project__Details', { '--expanded': isExpanded })}>
         <h3
