@@ -76,7 +76,6 @@
   font-size: 0.9em;
   padding-top: 10px;
   height: 30.25px;
-  transition: all 1s ease-in-out;
 }
 
 .ContactForm__SuccessMessage.--successful {

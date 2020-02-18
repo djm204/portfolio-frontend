@@ -45,6 +45,7 @@ const useContactForm = () => {
           setTimeout(() => {
             setResponseMessage(initialResponseMessage)
           }, 5000)
+          setSubmitting(false)
         })
         .catch(err => {
           setResponseMessage(err)
@@ -52,7 +53,6 @@ const useContactForm = () => {
             setResponseMessage(initialResponseMessage)
           }, 3000)
         })
-      setSubmitting(false)
     } else {
       setInputErrors(errors)
       setSubmitting(false)
