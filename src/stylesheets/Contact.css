@@ -23,8 +23,8 @@
   flex-direction: column;
 }
 
-.ContactForm input,
-.ContactForm textarea,
+.ContactForm .InputField,
+.ContactForm .TextAreaField,
 .ContactForm button {
   background: rgba(219, 230, 255, 1);
   border: 1px solid rgba(126, 165, 255, 0.5);
@@ -32,6 +32,12 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.05em;
+}
+
+.ContactForm .TextAreaField:focus,
+.ContactForm .InputField:focus,
+.ContactForm button:focus {
+  outline: none;
 }
 
 .ContactForm button {
@@ -70,6 +76,10 @@
 .spinner {
   animation: rotate 1s linear infinite;
   color: rgba(0, 34, 111, 1);
+}
+
+.spinner svg {
+  margin: 0;
 }
 
 .ContactForm__SuccessMessage {

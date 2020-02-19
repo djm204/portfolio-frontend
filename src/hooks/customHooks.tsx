@@ -35,19 +35,19 @@ const useContactForm = () => {
 
     if (event) event.preventDefault()
     setSubmitting(true)
-
     const errors = validate(inputs)
 
     if (errors.length === 0) {
       post(request)
         .then(data => {
+          setSubmitting(false)
           setResponseMessage(data as any)
           setTimeout(() => {
             setResponseMessage(initialResponseMessage)
-          }, 5000)
-          setSubmitting(false)
+          }, 3000)
         })
         .catch(err => {
+          setSubmitting(false)
           setResponseMessage(err)
           setTimeout(() => {
             setResponseMessage(initialResponseMessage)
@@ -55,7 +55,6 @@ const useContactForm = () => {
         })
     } else {
       setInputErrors(errors)
-      setSubmitting(false)
     }
   }
 

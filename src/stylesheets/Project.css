@@ -56,6 +56,7 @@
   margin-right: 10px;
   object-fit: contain;
   padding-right: 20px;
+  max-height: 275px;
 }
 
 .ExpandedProjectImageBackground {
@@ -79,13 +80,13 @@
 }
 
 .Project__Image__Wrapper__Expanded {
-  width: 90%;
+  width: 75%;
 }
 
 .Project__Image__Expanded {
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 75%;
   flex-basis: 100%;
 }
 

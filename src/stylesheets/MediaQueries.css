@@ -4,10 +4,6 @@
     padding-left: 0;
   }
 
-  .ContactForm__Wrapper {
-    width: 90%;
-  }
-
   .EggBert {
     position: initial;
   }
@@ -69,7 +65,7 @@
     border: 1px solid rgb(0, 34, 111);
   }
 
-  .Contact__Form__Wrapper {
+  .ContactForm__Wrapper {
     width: 100%;
   }
   .Contact {
@@ -78,6 +74,30 @@
 
   .Bio__Image {
     padding-right: 0px;
+  }
+
+  .Project__Image__Wrapper__Expanded {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .Project__Image__Wrapper__Expanded {
+    width: 100%;
+  }
+
+  .Project__Image__Expanded {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Project__Image__Wrapper__Expanded {
+    width: 100%;
+  }
+
+  .Project__Image__Expanded {
+    width: 90%;
   }
 }
 
