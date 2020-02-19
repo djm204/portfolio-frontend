@@ -25,8 +25,6 @@ const Contact: FunctionComponent = () => {
     if (responseMessage.success) {
       return 'check-circle'
     }
-
-    return ''
   }
 
   return (
@@ -85,7 +83,10 @@ const Contact: FunctionComponent = () => {
               }
             )}
           >
-            <FontAwesomeIcon icon={successMessageIconClass() as IconProp} />
+            {responseMessage.message !== '' ? (
+              <FontAwesomeIcon icon={successMessageIconClass() as IconProp} />
+            ) : null}
+
             {responseMessage.message}
           </div>
         </form>

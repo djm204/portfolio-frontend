@@ -3,6 +3,5 @@ export const selectEggClassAtRandom = (alreadyShown: Array<string>): string => {
 
   const filteredEggs = allEggs.filter(egg => !alreadyShown.includes(egg as never))
   const eggIndex = Math.floor(Math.random() * filteredEggs.length)
-
   return filteredEggs[eggIndex]
 }

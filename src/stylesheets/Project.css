@@ -57,6 +57,7 @@
   object-fit: contain;
   padding-right: 20px;
   max-height: 275px;
+  cursor: pointer;
 }
 
 .ExpandedProjectImageBackground {

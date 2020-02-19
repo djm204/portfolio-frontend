@@ -24,7 +24,7 @@ const Egg = () => {
       setShowFriedEgg(false)
     }, 3000)
 
-    if (alreadyShown.length >= 3) {
+    if (alreadyShown.length >= 4) {
       setAlreadyShown([])
     }
   }

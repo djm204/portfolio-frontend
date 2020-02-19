@@ -55,6 +55,7 @@ const useContactForm = () => {
         })
     } else {
       setInputErrors(errors)
+      setSubmitting(false)
     }
   }
 
