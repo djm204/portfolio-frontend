@@ -26,8 +26,8 @@ const TechSummary = () => {
             would imagine it didn't end well for young David.
           </p>
           <p>
-            I was first introduced by my parents via an IBM PS/2 486 Desktop PC. I managed to mess
-            up the Windows installation within a week. Pretty darn sure I used{' '}
+            I was first introduced to computers by my parents via an IBM PS/2 486 desktop PC. I
+            managed to mess up the Windows installation within a week. Pretty darn sure I used{' '}
             <code>FORMAT C:</code>
           </p>
           <p>
