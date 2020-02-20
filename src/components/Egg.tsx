@@ -33,22 +33,22 @@ const Egg = () => {
 
   return (
     <React.Fragment>
-      <button className="EggBert" onClick={showEgg} disabled={showFriedEgg}>
+      <button role="show-eggs" className="EggBert" onClick={showEgg} disabled={showFriedEgg}>
         <FontAwesomeIcon icon={iconClass} />
       </button>
-      <div className="Egg Egg--1 Egg__Hide">
+      <div className="Egg Egg--1 Egg__Hide" data-testid="egg">
         <Image
           imgUrl="https://davidmendez.dev/i_love_to_festival.jpg"
           altText="I love to festival"
         />
       </div>
-      <div className="Egg Egg--2 Egg__Hide">
+      <div className="Egg Egg--2 Egg__Hide" data-testid="egg">
         <Image imgUrl="https://davidmendez.dev/i_love_to_garden.jpg" altText="I love to garden" />
       </div>
-      <div className="Egg Egg--3 Egg__Hide">
+      <div className="Egg Egg--3 Egg__Hide" data-testid="egg">
         <Image imgUrl="https://davidmendez.dev/i_love_my_cats.jpg" altText="I love my cats" />
       </div>
-      <div className="Egg Egg--4 Egg__Hide">
+      <div className="Egg Egg--4 Egg__Hide" data-testid="egg">
         <Image imgUrl="https://davidmendez.dev/me_and_my_love.jpg" altText="My love and I" />
       </div>
     </React.Fragment>

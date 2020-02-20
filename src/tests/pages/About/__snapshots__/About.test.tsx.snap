@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="About"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        id="About"
+      >
+        <div
+          class="InfoSection Bio"
+          classnames="Bio"
+        >
+          <div
+            class="Bio__Image"
+          >
+            <div
+              class="image-wrapper Bio__Image__Picture"
+            >
+              <img
+                alt="David Mendez"
+                src="david_on_a_mountain.jpg"
+              />
+            </div>
+            <h4>
+              David Mendez
+            </h4>
+            <h5>
+              Developer
+            </h5>
+          </div>
+          <div
+            class="Bio__AndQuote"
+          >
+            <div
+              class="WriteUp"
+            >
+              <h2>
+                About David
+              </h2>
+              <p>
+                As a life-long technology enthusiast with an insatiable appetite for software development I spend a lot of my free time in front of the PC; creating and furthering my knowledge about different technologies such as JavaScript, GoLang and Python.
+              </p>
+              <p>
+                Staying up to date with technology, code coverage and best practices are very important to me.
+              </p>
+            </div>
+            <div
+              class="Quote"
+            >
+              <h4>
+                Favourite Quote
+              </h4>
+              <blockquote>
+                "Why settle for normalcy when there's a whole world of weird to explore?"
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="About"
+      data-aos="fade-in"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-once="true"
+      id="About"
+    >
+      <div
+        class="InfoSection Bio"
+        classnames="Bio"
+      >
+        <div
+          class="Bio__Image"
+        >
+          <div
+            class="image-wrapper Bio__Image__Picture"
+          >
+            <img
+              alt="David Mendez"
+              src="david_on_a_mountain.jpg"
+            />
+          </div>
+          <h4>
+            David Mendez
+          </h4>
+          <h5>
+            Developer
+          </h5>
+        </div>
+        <div
+          class="Bio__AndQuote"
+        >
+          <div
+            class="WriteUp"
+          >
+            <h2>
+              About David
+            </h2>
+            <p>
+              As a life-long technology enthusiast with an insatiable appetite for software development I spend a lot of my free time in front of the PC; creating and furthering my knowledge about different technologies such as JavaScript, GoLang and Python.
+            </p>
+            <p>
+              Staying up to date with technology, code coverage and best practices are very important to me.
+            </p>
+          </div>
+          <div
+            class="Quote"
+          >
+            <h4>
+              Favourite Quote
+            </h4>
+            <blockquote>
+              "Why settle for normalcy when there's a whole world of weird to explore?"
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

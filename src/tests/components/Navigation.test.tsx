@@ -1,13 +1,14 @@
 import React from 'react'
-import Header from '../../../components/layout/Header'
+import Navigation from '../../components/Navigation'
 import { HashRouter as Router } from 'react-router-dom'
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
-it('Header renders without crashing', () => {
+it('Navigation renders without crashing', () => {
   const result = render(
     <Router>
-      <Header />
+      <Navigation />
     </Router>
   )
+
   expect(result).toMatchSnapshot()
 })

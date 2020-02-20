@@ -1,0 +1,1092 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechSummary renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="TechSummaryPage"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        id="TechSummary"
+      >
+        <div
+          class="HorizontalSeparator lighter left-to-right"
+          classnames="lighter,left-to-right"
+        />
+        <div
+          class="InfoSection TechSummaryPage__InfoSection"
+          classnames="TechSummaryPage__InfoSection"
+        >
+          <div
+            class="TechSummaryPage__Introduction"
+          >
+            <h2>
+              A Brief History
+            </h2>
+            <p>
+              Technology has had me enamoured from a very young age. When I had a remote control car, I didn't just play with it, I took it apart to see what made the insides work. As you would imagine it didn't end well for young David.
+            </p>
+            <p>
+              I was first introduced to computers by my parents via an IBM PS/2 486 desktop PC. I managed to mess up the Windows installation within a week. Pretty darn sure I used
+               
+              <code>
+                FORMAT C:
+              </code>
+            </p>
+            <p>
+              When my parents brought the PC to get fixed, I asked the person fixing the PC if I could watch.
+            </p>
+            <p>
+              After watching what he did to re-install Windows, I was now equipped to experiment with the OS as much as I pleased as long as I reinstalled it, of course.
+            </p>
+            <p>
+              Little did I know that this interaction would spark a life long journey into technology.
+            </p>
+          </div>
+          <div
+            class="TechSummaryPage__Introduction__StatBars"
+          >
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                HTML
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 85%;"
+                >
+                  95%
+                </div>
+              </div>
+            </div>
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                CSS
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 80%;"
+                >
+                  90%
+                </div>
+              </div>
+            </div>
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                JavaScript
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 80%;"
+                >
+                  90%
+                </div>
+              </div>
+            </div>
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                React
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 80%;"
+                >
+                  90%
+                </div>
+              </div>
+            </div>
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                Redux
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 75%;"
+                >
+                  85%
+                </div>
+              </div>
+            </div>
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                TypeScript
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 65%;"
+                >
+                  75%
+                </div>
+              </div>
+            </div>
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                NodeJS
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 55%;"
+                >
+                  65%
+                </div>
+              </div>
+            </div>
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                Go
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 55%;"
+                >
+                  65%
+                </div>
+              </div>
+            </div>
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                K8s
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 45%;"
+                >
+                  55%
+                </div>
+              </div>
+            </div>
+            <div
+              class="StatsBar__Wrapper"
+            >
+              <div
+                class="StatsBar__Name"
+              >
+                GCP
+              </div>
+              <div
+                class="StatsBar__Container"
+              >
+                <div
+                  class="StatsBar"
+                  style="width: 45%;"
+                >
+                  55%
+                </div>
+              </div>
+            </div>
+            <small>
+              * Percentages represent level of confidence when working with respective technologies
+            </small>
+          </div>
+        </div>
+        <div
+          class="HorizontalSeparator lighter right-to-left"
+          classnames="lighter,right-to-left"
+        />
+        <div
+          class="InfoSection TechSummaryPage__Projects"
+          classnames="TechSummaryPage__Projects"
+          id="Projects"
+        >
+          <h2>
+            Projects
+          </h2>
+          <div
+            class="TechSummary__Projects__Wrapper"
+          >
+            <div
+              class="Project Projects_Cashier"
+              id="Projects_Cashier"
+            >
+              <div
+                class="ExpandedProjectImageBackground"
+              >
+                <div
+                  class="Project__Image__Wrapper__Expanded"
+                >
+                  <img
+                    alt="Cashier"
+                    class="Project__Image__Expanded"
+                    src="cashier--expanded.jpg"
+                  />
+                </div>
+              </div>
+              <img
+                alt="Cashier"
+                class="Project__Image"
+                src="cashier.jpg"
+              />
+              <div
+                class="Project__Details"
+              >
+                <h3
+                  class="Project__Name "
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
+                  Cashier
+                </h3>
+                <div
+                  class="Project__Role "
+                >
+                  Developer Team Lead / Full Stack Developer
+                </div>
+                <ul
+                  class="Project__Notables "
+                >
+                  <li>
+                    Pair programming / mentoring & unblocking reports.
+                  </li>
+                  <li>
+                    Delegation and prioritization of tasks.
+                  </li>
+                  <li>
+                    React/Redux App for Admin and Checkout.
+                  </li>
+                  <li>
+                    Hybrid PHP / Go backend.
+                  </li>
+                  <li>
+                    4 years on the team.
+                  </li>
+                </ul>
+                <div
+                  class="Project__Link__Wrapper"
+                >
+                  <span
+                    class="Project__NotPublic "
+                  >
+                    *Not Publicly Available
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="Project Projects_Staples"
+              id="Projects_Staples"
+            >
+              <div
+                class="ExpandedProjectImageBackground"
+              >
+                <div
+                  class="Project__Image__Wrapper__Expanded"
+                >
+                  <img
+                    alt="Staples Project"
+                    class="Project__Image__Expanded"
+                    src="staples--expanded.jpg"
+                  />
+                </div>
+              </div>
+              <img
+                alt="Staples Project"
+                class="Project__Image"
+                src="staples.jpg"
+              />
+              <div
+                class="Project__Details"
+              >
+                <h3
+                  class="Project__Name "
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
+                  Staples Project
+                </h3>
+                <div
+                  class="Project__Role "
+                >
+                  Developer Team Lead / Full Stack Developer
+                </div>
+                <ul
+                  class="Project__Notables "
+                >
+                  <li>
+                    React/Redux App.
+                  </li>
+                  <li>
+                    Customized Cashier to meet Staples' business requirements.
+                  </li>
+                  <li>
+                    Successful delivery on tight timeline.
+                  </li>
+                </ul>
+                <div
+                  class="Project__Link__Wrapper"
+                >
+                  <a
+                    class="Project__Link"
+                    href="https://staples.ca"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="Project Projects_MultiCurrency"
+              id="Projects_MultiCurrency"
+            >
+              <div
+                class="ExpandedProjectImageBackground"
+              >
+                <div
+                  class="Project__Image__Wrapper__Expanded"
+                >
+                  <img
+                    alt="Bold MultiCurrency"
+                    class="Project__Image__Expanded"
+                    src="multicurrency--expanded.jpg"
+                  />
+                </div>
+              </div>
+              <img
+                alt="Bold MultiCurrency"
+                class="Project__Image"
+                src="multicurrency.jpg"
+              />
+              <div
+                class="Project__Details"
+              >
+                <h3
+                  class="Project__Name "
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
+                  Bold MultiCurrency
+                </h3>
+                <div
+                  class="Project__Role "
+                >
+                  Completed the first iteration of the frontend of the app in its entirety, pretty much solo. *cracks knuckles*
+                </div>
+                <ul
+                  class="Project__Notables "
+                >
+                  <li>
+                    React/Redux App
+                  </li>
+                  <li>
+                    Conversion engine
+                  </li>
+                  <li>
+                    Integrated with Cashier
+                  </li>
+                </ul>
+                <div
+                  class="Project__Link__Wrapper"
+                >
+                  <a
+                    class="Project__Link"
+                    href="https://boldcommerce.com/multi-currency"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="Project Projects_DeepRoots"
+              id="Projects_DeepRoots"
+            >
+              <div
+                class="ExpandedProjectImageBackground"
+              >
+                <div
+                  class="Project__Image__Wrapper__Expanded"
+                >
+                  <img
+                    alt="DRSD - Website"
+                    class="Project__Image__Expanded"
+                    src="deeproots--expanded.jpg"
+                  />
+                </div>
+              </div>
+              <img
+                alt="DRSD - Website"
+                class="Project__Image"
+                src="deeproots.jpg"
+              />
+              <div
+                class="Project__Details"
+              >
+                <h3
+                  class="Project__Name "
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
+                  DRSD - Website
+                </h3>
+                <div
+                  class="Project__Role "
+                >
+                  Designed and built entire site
+                </div>
+                <ul
+                  class="Project__Notables "
+                >
+                  <li>
+                    React/Redux
+                  </li>
+                  <li>
+                    API endpoint for adding to mailing list.
+                  </li>
+                </ul>
+                <div
+                  class="Project__Link__Wrapper"
+                >
+                  <a
+                    class="Project__Link"
+                    href="https://www.deeproots-strongdance.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="TechSummaryPage"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-once="true"
+      id="TechSummary"
+    >
+      <div
+        class="HorizontalSeparator lighter left-to-right"
+        classnames="lighter,left-to-right"
+      />
+      <div
+        class="InfoSection TechSummaryPage__InfoSection"
+        classnames="TechSummaryPage__InfoSection"
+      >
+        <div
+          class="TechSummaryPage__Introduction"
+        >
+          <h2>
+            A Brief History
+          </h2>
+          <p>
+            Technology has had me enamoured from a very young age. When I had a remote control car, I didn't just play with it, I took it apart to see what made the insides work. As you would imagine it didn't end well for young David.
+          </p>
+          <p>
+            I was first introduced to computers by my parents via an IBM PS/2 486 desktop PC. I managed to mess up the Windows installation within a week. Pretty darn sure I used
+             
+            <code>
+              FORMAT C:
+            </code>
+          </p>
+          <p>
+            When my parents brought the PC to get fixed, I asked the person fixing the PC if I could watch.
+          </p>
+          <p>
+            After watching what he did to re-install Windows, I was now equipped to experiment with the OS as much as I pleased as long as I reinstalled it, of course.
+          </p>
+          <p>
+            Little did I know that this interaction would spark a life long journey into technology.
+          </p>
+        </div>
+        <div
+          class="TechSummaryPage__Introduction__StatBars"
+        >
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              HTML
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 85%;"
+              >
+                95%
+              </div>
+            </div>
+          </div>
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              CSS
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 80%;"
+              >
+                90%
+              </div>
+            </div>
+          </div>
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              JavaScript
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 80%;"
+              >
+                90%
+              </div>
+            </div>
+          </div>
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              React
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 80%;"
+              >
+                90%
+              </div>
+            </div>
+          </div>
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              Redux
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 75%;"
+              >
+                85%
+              </div>
+            </div>
+          </div>
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              TypeScript
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 65%;"
+              >
+                75%
+              </div>
+            </div>
+          </div>
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              NodeJS
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 55%;"
+              >
+                65%
+              </div>
+            </div>
+          </div>
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              Go
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 55%;"
+              >
+                65%
+              </div>
+            </div>
+          </div>
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              K8s
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 45%;"
+              >
+                55%
+              </div>
+            </div>
+          </div>
+          <div
+            class="StatsBar__Wrapper"
+          >
+            <div
+              class="StatsBar__Name"
+            >
+              GCP
+            </div>
+            <div
+              class="StatsBar__Container"
+            >
+              <div
+                class="StatsBar"
+                style="width: 45%;"
+              >
+                55%
+              </div>
+            </div>
+          </div>
+          <small>
+            * Percentages represent level of confidence when working with respective technologies
+          </small>
+        </div>
+      </div>
+      <div
+        class="HorizontalSeparator lighter right-to-left"
+        classnames="lighter,right-to-left"
+      />
+      <div
+        class="InfoSection TechSummaryPage__Projects"
+        classnames="TechSummaryPage__Projects"
+        id="Projects"
+      >
+        <h2>
+          Projects
+        </h2>
+        <div
+          class="TechSummary__Projects__Wrapper"
+        >
+          <div
+            class="Project Projects_Cashier"
+            id="Projects_Cashier"
+          >
+            <div
+              class="ExpandedProjectImageBackground"
+            >
+              <div
+                class="Project__Image__Wrapper__Expanded"
+              >
+                <img
+                  alt="Cashier"
+                  class="Project__Image__Expanded"
+                  src="cashier--expanded.jpg"
+                />
+              </div>
+            </div>
+            <img
+              alt="Cashier"
+              class="Project__Image"
+              src="cashier.jpg"
+            />
+            <div
+              class="Project__Details"
+            >
+              <h3
+                class="Project__Name "
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                Cashier
+              </h3>
+              <div
+                class="Project__Role "
+              >
+                Developer Team Lead / Full Stack Developer
+              </div>
+              <ul
+                class="Project__Notables "
+              >
+                <li>
+                  Pair programming / mentoring & unblocking reports.
+                </li>
+                <li>
+                  Delegation and prioritization of tasks.
+                </li>
+                <li>
+                  React/Redux App for Admin and Checkout.
+                </li>
+                <li>
+                  Hybrid PHP / Go backend.
+                </li>
+                <li>
+                  4 years on the team.
+                </li>
+              </ul>
+              <div
+                class="Project__Link__Wrapper"
+              >
+                <span
+                  class="Project__NotPublic "
+                >
+                  *Not Publicly Available
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="Project Projects_Staples"
+            id="Projects_Staples"
+          >
+            <div
+              class="ExpandedProjectImageBackground"
+            >
+              <div
+                class="Project__Image__Wrapper__Expanded"
+              >
+                <img
+                  alt="Staples Project"
+                  class="Project__Image__Expanded"
+                  src="staples--expanded.jpg"
+                />
+              </div>
+            </div>
+            <img
+              alt="Staples Project"
+              class="Project__Image"
+              src="staples.jpg"
+            />
+            <div
+              class="Project__Details"
+            >
+              <h3
+                class="Project__Name "
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                Staples Project
+              </h3>
+              <div
+                class="Project__Role "
+              >
+                Developer Team Lead / Full Stack Developer
+              </div>
+              <ul
+                class="Project__Notables "
+              >
+                <li>
+                  React/Redux App.
+                </li>
+                <li>
+                  Customized Cashier to meet Staples' business requirements.
+                </li>
+                <li>
+                  Successful delivery on tight timeline.
+                </li>
+              </ul>
+              <div
+                class="Project__Link__Wrapper"
+              >
+                <a
+                  class="Project__Link"
+                  href="https://staples.ca"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="Project Projects_MultiCurrency"
+            id="Projects_MultiCurrency"
+          >
+            <div
+              class="ExpandedProjectImageBackground"
+            >
+              <div
+                class="Project__Image__Wrapper__Expanded"
+              >
+                <img
+                  alt="Bold MultiCurrency"
+                  class="Project__Image__Expanded"
+                  src="multicurrency--expanded.jpg"
+                />
+              </div>
+            </div>
+            <img
+              alt="Bold MultiCurrency"
+              class="Project__Image"
+              src="multicurrency.jpg"
+            />
+            <div
+              class="Project__Details"
+            >
+              <h3
+                class="Project__Name "
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                Bold MultiCurrency
+              </h3>
+              <div
+                class="Project__Role "
+              >
+                Completed the first iteration of the frontend of the app in its entirety, pretty much solo. *cracks knuckles*
+              </div>
+              <ul
+                class="Project__Notables "
+              >
+                <li>
+                  React/Redux App
+                </li>
+                <li>
+                  Conversion engine
+                </li>
+                <li>
+                  Integrated with Cashier
+                </li>
+              </ul>
+              <div
+                class="Project__Link__Wrapper"
+              >
+                <a
+                  class="Project__Link"
+                  href="https://boldcommerce.com/multi-currency"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="Project Projects_DeepRoots"
+            id="Projects_DeepRoots"
+          >
+            <div
+              class="ExpandedProjectImageBackground"
+            >
+              <div
+                class="Project__Image__Wrapper__Expanded"
+              >
+                <img
+                  alt="DRSD - Website"
+                  class="Project__Image__Expanded"
+                  src="deeproots--expanded.jpg"
+                />
+              </div>
+            </div>
+            <img
+              alt="DRSD - Website"
+              class="Project__Image"
+              src="deeproots.jpg"
+            />
+            <div
+              class="Project__Details"
+            >
+              <h3
+                class="Project__Name "
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                DRSD - Website
+              </h3>
+              <div
+                class="Project__Role "
+              >
+                Designed and built entire site
+              </div>
+              <ul
+                class="Project__Notables "
+              >
+                <li>
+                  React/Redux
+                </li>
+                <li>
+                  API endpoint for adding to mailing list.
+                </li>
+              </ul>
+              <div
+                class="Project__Link__Wrapper"
+              >
+                <a
+                  class="Project__Link"
+                  href="https://www.deeproots-strongdance.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
