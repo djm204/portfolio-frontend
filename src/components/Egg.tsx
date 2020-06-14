@@ -38,18 +38,21 @@ const Egg = () => {
       </button>
       <div className="Egg Egg--1 Egg__Hide">
         <Image
-          imgUrl="https://davidmendez.dev/i_love_to_festival.jpg"
+          imgUrl="https://davidmendez.dev/img/i_love_to_festival.jpg"
           altText="I love to festival"
         />
       </div>
       <div className="Egg Egg--2 Egg__Hide">
-        <Image imgUrl="https://davidmendez.dev/i_love_to_garden.jpg" altText="I love to garden" />
+        <Image
+          imgUrl="https://davidmendez.dev/img/i_love_to_garden.jpg"
+          altText="I love to garden"
+        />
       </div>
       <div className="Egg Egg--3 Egg__Hide">
-        <Image imgUrl="https://davidmendez.dev/i_love_my_cats.jpg" altText="I love my cats" />
+        <Image imgUrl="https://davidmendez.dev/img/i_love_my_cats.jpg" altText="I love my cats" />
       </div>
       <div className="Egg Egg--4 Egg__Hide">
-        <Image imgUrl="https://davidmendez.dev/me_and_my_love.jpg" altText="My love and I" />
+        <Image imgUrl="https://davidmendez.dev/img/me_and_my_love.jpg" altText="My love and I" />
       </div>
     </React.Fragment>
   )

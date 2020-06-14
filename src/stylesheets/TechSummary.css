@@ -3,9 +3,20 @@
   font-size: 1.12em;
 }
 
-.TechSummaryPage__Introduction,
-.TechSummaryPage__Introduction__StatBars {
-  flex-basis: 50%;
+.TechSummaryPage__Introduction {
+  flex-basis: 70%;
+}
+
+.TechSummaryPage__Introduction__Technology {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
+.TechSummaryPage__Introduction__Technology .technology-logo {
+  width: 100px;
 }
 
 .TechSummaryPage__Introduction__StatBars {

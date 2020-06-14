@@ -41,7 +41,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build; npm run-script remove-old-production-code; npm run-script copy-to-laravel",
-    "remove-old-production-code": "rm ../portfolio-backend/public/static/css/main* ../portfolio-backend/public/static/js/runtime* ../portfolio-backend/public/precache* ../portfolio-backend/public/static/css/2* ../portfolio-backend/public/static/js/2* ../portfolio-backend/public/static/js/main*",
+    "remove-old-production-code": "rm -r ../portfolio-backend/public/img/* ../portfolio-backend/public/static/css/main* ../portfolio-backend/public/static/js/runtime* ../portfolio-backend/public/precache* ../portfolio-backend/public/static/css/2* ../portfolio-backend/public/static/js/2* ../portfolio-backend/public/static/js/main*",
     "copy-to-laravel": "cp ./build/index.html ../portfolio-backend/resources/views/app.blade.php; cp -r ./build/*  ../portfolio-backend/public",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

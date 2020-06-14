@@ -5,7 +5,7 @@
   display: flex;
 }
 
-.StatsBar__Name {
+.StatsBar__Wrapper .StatsBar__Name {
   color: white;
   background-color: rgba(26, 95, 255, 1);
   padding: 2px;

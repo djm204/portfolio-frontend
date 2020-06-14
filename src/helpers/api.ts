@@ -2,17 +2,16 @@ import 'promise/polyfill'
 import 'whatwg-fetch'
 import * as globalTypes from '../types/global'
 
-export async function get<T>(request: globalTypes.ApiRequest): Promise<T> {
+export async function get<T>(request: globalTypes.ApiRequest) {
   const response = await fetch(request.url)
-
   if (!response.ok) {
     throw new Error(response.statusText)
   }
 
-  return response.json() as Promise<T>
+  return await response.json()
 }
 
-export async function post<T>(request: globalTypes.ApiRequest): Promise<T> {
+export async function post<T>(request: globalTypes.ApiRequest) {
   const payload = {
     method: 'POST',
     headers: {
@@ -28,10 +27,10 @@ export async function post<T>(request: globalTypes.ApiRequest): Promise<T> {
     throw new Error(response.statusText)
   }
 
-  return response.json() as Promise<T>
+  return await response.json()
 }
 
-export async function put<T>(request: globalTypes.ApiRequest): Promise<T> {
+export async function put<T>(request: globalTypes.ApiRequest) {
   const payload = {
     method: 'PUT',
     headers: {
@@ -66,10 +65,10 @@ export async function del<T>(request: globalTypes.ApiRequest): Promise<T> {
     throw new Error(response.statusText)
   }
 
-  return response.json() as Promise<T>
+  return await response.json()
 }
 
-export async function patch<T>(request: globalTypes.ApiRequest): Promise<T> {
+export async function patch<T>(request: globalTypes.ApiRequest) {
   const payload = {
     method: 'PATCH',
     headers: {
@@ -85,5 +84,5 @@ export async function patch<T>(request: globalTypes.ApiRequest): Promise<T> {
     throw new Error(response.statusText)
   }
 
-  return response.json() as Promise<T>
+  return await response.json()
 }

@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect, FunctionComponent } from 'react'
 import { InfoSection } from '../../components/layout/InfoSection'
 import Project from './Project'
-import StatsBar from './StatsBar'
+import Image from '../../components/Image'
 import '../../stylesheets/TechSummary.css'
 import { skills, projects } from './dataSource'
 import HorizontalSeparator from '../../components/layout/HorizontalSeparator'
+import { get } from '../../helpers/api'
 
-const TechSummary = () => {
+const TechSummary: FunctionComponent = () => {
+  const [techImages, setTechImages] = useState()
+
+  //ComponentDidMount
+  useEffect(() => {
+    get({ url: '/api/techImages' })
+      .then((techImages) => setTechImages(JSON.parse(techImages)))
+      .catch((err: any) => console.error(err))
+  }, [])
+
   return (
     <div
       data-aos="fade-left"
@@ -42,20 +52,33 @@ const TechSummary = () => {
             Little did I know that this interaction would spark a life long journey into technology.
           </p>
         </div>
-        <div className="TechSummaryPage__Introduction__StatBars">
+        {/* <div className="TechSummaryPage__Introduction__StatBars">
           {skills.map(skill => (
             <StatsBar key={JSON.stringify(skill)} {...skill} />
           ))}
           <small>
             * Percentages represent level of confidence when working with respective technologies
           </small>
+        </div> */}
+        <div className="TechSummaryPage__Introduction__Technology">
+          <h2>Technologies</h2>
+          <div className="TechLogos">
+            {techImages &&
+              techImages.map((image: any) => (
+                <Image
+                  imgClasses={['technology-logo', image.altText.toLowerCase()]}
+                  key={image.imgUrl}
+                  {...image}
+                />
+              ))}
+          </div>
         </div>
       </InfoSection>
       <HorizontalSeparator classnames={['lighter', 'right-to-left']} />
       <InfoSection id="Projects" classnames="TechSummaryPage__Projects">
         <h2>Projects</h2>
         <div className="TechSummary__Projects__Wrapper">
-          {projects.map(project => (
+          {projects.map((project) => (
             <Project key={JSON.stringify(project)} {...project} />
           ))}
         </div>
